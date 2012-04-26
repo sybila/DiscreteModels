@@ -1,0 +1,172 @@
+<MODEL ver="1.0">
+	<STRUCTURE unspec="error">
+		<SPECIE name="CBF1" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="2" threshold ="1" />
+				<INTER source="3" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="00" t_value="1" />
+				<REGUL mask="01" t_value="-1" />
+				<REGUL mask="10" t_value="-1" />
+				<REGUL mask="11" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="GAL4" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="0" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="SWI5" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="1" threshold ="1" />
+				<INTER source="4" threshold ="1" />
+				<INTER source="5" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="000" t_value="1" />
+				<REGUL mask="001" t_value="-1" />
+				<REGUL mask="010" t_value="-1" />
+				<REGUL mask="011" t_value="-1" />
+				<REGUL mask="100" t_value="-1" />
+				<REGUL mask="101" t_value="-1" />
+				<REGUL mask="110" t_value="-1" />
+				<REGUL mask="111" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="ASH1" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="2" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="gal" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="4" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="GAL80" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="2" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+	</STRUCTURE>
+	<AUTOMATON>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=1&SWI5=1&ASH1=1" target="1" />
+				<TRANS label="tt" target="0" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=0&GAL80=1&gal=0&SWI5=0&ASH1=1" target="2" />
+				<TRANS label="tt" target="1" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=0&GAL80=1&gal=0&SWI5=1&ASH1=1" target="3" />
+				<TRANS label="tt" target="2" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=1&gal=0&SWI5=0&ASH1=1" target="4" />
+				<TRANS label="tt" target="3" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=0&gal=0&SWI5=0&ASH1=1" target="5" />
+				<TRANS label="tt" target="4" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=1&gal=0&SWI5=0&ASH1=1" target="6" />
+				<TRANS label="tt" target="5" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=0&gal=0&SWI5=0&ASH1=1" target="7" />
+				<TRANS label="tt" target="6" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=1&GAL80=1&gal=0&SWI5=0&ASH1=0" target="8" />
+				<TRANS label="tt" target="7" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=1&GAL4=0&GAL80=0&gal=0&SWI5=0&ASH1=0" target="9" />
+				<TRANS label="tt" target="8" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=1&GAL80=0&gal=0&SWI5=0&ASH1=0" target="10" />
+				<TRANS label="tt" target="9" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=0&GAL80=0&gal=0&SWI5=0&ASH1=0" target="11" />
+				<TRANS label="tt" target="10" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=1&GAL80=0&gal=0&SWI5=0&ASH1=0" target="12" />
+				<TRANS label="tt" target="11" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=1&GAL80=1&gal=0&SWI5=0&ASH1=0" target="13" />
+				<TRANS label="tt" target="12" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=1&GAL80=0&gal=0&SWI5=1&ASH1=0" target="14" />
+				<TRANS label="tt" target="13" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=1&GAL80=0&gal=0&SWI5=0&ASH1=0" target="15" />
+				<TRANS label="tt" target="14" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="CBF1=0&GAL4=0&GAL80=0&gal=0&SWI5=0&ASH1=0" target="16" />
+				<TRANS label="tt" target="15" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="1">
+			<TRANSITIONS>
+				<TRANS label="tt" target="16" />
+			</TRANSITIONS>
+		</STATE>
+	</AUTOMATON>
+</MODEL>

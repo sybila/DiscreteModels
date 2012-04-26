@@ -1,0 +1,9 @@
+DiscreteModels
+==============
+
+Discrete biological models and computed results
+
+Contains:
+model files: *.dbm
+computed data: *.psf
+color bitmask: *.cbm
