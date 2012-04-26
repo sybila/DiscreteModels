@@ -63,19 +63,19 @@
 		<STATE final="0">
 			<TRANSITIONS>
 				<TRANS label="tt" target="0" />
-				<TRANS label="cI=0&cII=0&cro=0&N=0" target="1" observ="1" />
+				<TRANS label="cI=0&cII=0&cro=0&N=0" target="1" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="0">
 			<TRANSITIONS>
 				<TRANS label="tt" target="1" />
-				<TRANS label="cI=2&cII=0&cro=1&N=1" target="2" observ="1" />
+				<TRANS label="cI=2&cII=0&cro=1&N=1" target="2" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="0">
 			<TRANSITIONS>
 				<TRANS label="tt" target="2" />
-				<TRANS label="cI=2&cII=0&cro=0&N=0" target="3" observ="1" />
+				<TRANS label="cI=2&cII=0&cro=0&N=0" target="3" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="1">
