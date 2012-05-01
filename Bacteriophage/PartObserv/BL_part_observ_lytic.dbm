@@ -2,9 +2,9 @@
 	<STRUCTURE unspec="error">
 		<SPECIE name="cI" max="2" basal="0">
 			<INTERACTIONS>
-				<INTER source="0" threshold ="2" label="+" observ="1" />
-				<INTER source="1" threshold ="1" label="+" observ="1" />
-				<INTER source="2" threshold ="1" label="-" observ="1" />
+				<INTER source="0" threshold ="2" label="+" />
+				<INTER source="1" threshold ="1" label="+" />
+				<INTER source="2" threshold ="1" label="-" />
 			</INTERACTIONS>
 			<REGULATIONS>
 				<REGUL mask="000" t_value="-1" />
@@ -60,22 +60,34 @@
 		</SPECIE>
 	</STRUCTURE>
 	<AUTOMATON>
+    <STATE final="0">
+      <TRANSITIONS>
+        <TRANS label="tt" target="0" />
+        <TRANS label="cI=0&amp;cII=0&amp;cro=0&amp;N=0" target="1" />
+      </TRANSITIONS>
+    </STATE>
 		<STATE final="0">
 			<TRANSITIONS>
-				<TRANS label="tt" target="0" />
-				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="1" />
+				<TRANS label="tt" target="1" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=1" target="2" />
 			</TRANSITIONS>
 		</STATE>
+    <STATE final="0">
+      <TRANSITIONS>
+        <TRANS label="tt" target="2" />
+        <TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="3" />
+      </TRANSITIONS>
+    </STATE>
 		<STATE final="1">
 			<TRANSITIONS>
-				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="2" />
-				<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="0" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="4" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="2" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="0">
 			<TRANSITIONS>
-				<TRANS label="tt" target="2" />
-				<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="1" />
+				<TRANS label="tt" target="4" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="3" />
 			</TRANSITIONS>
 		</STATE>
 	</AUTOMATON>
