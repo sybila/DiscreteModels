@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text x="100" y="40" text-anchor="start" font-size="26" fill="black">Expression profile of N</text>
+  <text x="950" y="600" text-anchor="end" font-size="18" fill="black">Measurements</text>
+  <text x="20" y="300" text-anchor="middle" style="font-size:18;writing-mode:tb;glyph-orientation-vertical:0" fill="black">N activity level</text>
+  <line x1="60" x2="1060" y1="570" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <text x="60" y="585" text-anchor="middle" fill="black">1</text>
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="560" y="585" text-anchor="middle" fill="black">2</text>
+  <line x1="560" x2="560" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="1060" y="585" text-anchor="middle" fill="black">3</text>
+  <line x1="1060" x2="1060" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="560" text-anchor="end" fill="black">0</text>
+  <line x1="60" x2="1060" y1="560" y2="560" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="60" text-anchor="end" fill="black">1</text>
+  <line x1="60" x2="1060" y1="60" y2="60" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <line x1="60" x2="143" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.047;stroke-width:2" />
+  <line x1="143" x2="226" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.047;stroke-width:2" />
+  <line x1="226" x2="310" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.081;stroke-width:2" />
+  <line x1="310" x2="393" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.106;stroke-width:2" />
+  <line x1="393" x2="476" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.127;stroke-width:2" />
+  <line x1="476" x2="560" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.147;stroke-width:2" />
+  <line x1="560" x2="810" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.068;stroke-width:2" />
+  <line x1="810" x2="1060" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.068;stroke-width:2" />
+  <line x1="60" x2="143" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.194;stroke-width:2" />
+  <line x1="143" x2="226" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.034;stroke-width:2" />
+  <line x1="560" x2="810" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.068;stroke-width:2" />
+  <line x1="810" x2="1060" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.068;stroke-width:2" />
+  <line x1="143" x2="226" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.160;stroke-width:2" />
+  <line x1="226" x2="310" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.025;stroke-width:2" />
+  <line x1="60" x2="110" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.276;stroke-width:2" />
+  <line x1="110" x2="160" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.276;stroke-width:2" />
+  <line x1="160" x2="210" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.479;stroke-width:2" />
+  <line x1="210" x2="260" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.609;stroke-width:2" />
+  <line x1="260" x2="310" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.662;stroke-width:2" />
+  <line x1="310" x2="360" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.562;stroke-width:2" />
+  <line x1="360" x2="410" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.449;stroke-width:2" />
+  <line x1="410" x2="460" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.449;stroke-width:2" />
+  <line x1="460" x2="510" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.449;stroke-width:2" />
+  <line x1="510" x2="560" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.449;stroke-width:2" />
+  <line x1="60" x2="110" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.483;stroke-width:2" />
+  <line x1="110" x2="160" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.203;stroke-width:2" />
+  <line x1="226" x2="310" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.135;stroke-width:2" />
+  <line x1="310" x2="393" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.114;stroke-width:2" />
+  <line x1="393" x2="476" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.094;stroke-width:2" />
+  <line x1="476" x2="560" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.094;stroke-width:2" />
+  <line x1="560" x2="622" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.555;stroke-width:2" />
+  <line x1="622" x2="685" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.555;stroke-width:2" />
+  <line x1="685" x2="747" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.036;stroke-width:2" />
+  <line x1="747" x2="810" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.036;stroke-width:2" />
+  <line x1="810" x2="872" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.286;stroke-width:2" />
+  <line x1="872" x2="935" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.536;stroke-width:2" />
+  <line x1="935" x2="997" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.555;stroke-width:2" />
+  <line x1="997" x2="1060" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.555;stroke-width:2" />
+  <line x1="685" x2="747" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.519;stroke-width:2" />
+  <line x1="747" x2="810" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.250;stroke-width:2" />
+  <line x1="747" x2="810" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.269;stroke-width:2" />
+  <line x1="810" x2="872" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.250;stroke-width:2" />
+  <line x1="110" x2="160" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.280;stroke-width:2" />
+  <line x1="160" x2="210" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.130;stroke-width:2" />
+  <line x1="810" x2="872" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.019;stroke-width:2" />
+  <line x1="872" x2="935" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.019;stroke-width:2" />
+  <line x1="160" x2="210" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.150;stroke-width:2" />
+  <line x1="210" x2="260" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.097;stroke-width:2" />
+  <line x1="260" x2="310" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.084;stroke-width:2" />
+  <line x1="310" x2="360" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.084;stroke-width:2" />
+  <line x1="360" x2="410" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.197;stroke-width:2" />
+  <line x1="410" x2="460" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.310;stroke-width:2" />
+  <line x1="460" x2="510" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.310;stroke-width:2" />
+  <line x1="510" x2="560" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.310;stroke-width:2" />
+  <line x1="560" x2="610" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.309;stroke-width:2" />
+  <line x1="610" x2="660" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.309;stroke-width:2" />
+  <line x1="660" x2="710" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.025;stroke-width:2" />
+  <line x1="710" x2="760" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.025;stroke-width:2" />
+  <line x1="760" x2="810" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.071;stroke-width:2" />
+  <line x1="810" x2="860" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.136;stroke-width:2" />
+  <line x1="860" x2="910" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.200;stroke-width:2" />
+  <line x1="910" x2="960" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.255;stroke-width:2" />
+  <line x1="960" x2="1010" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.309;stroke-width:2" />
+  <line x1="1010" x2="1060" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.309;stroke-width:2" />
+  <line x1="660" x2="710" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.284;stroke-width:2" />
+  <line x1="710" x2="760" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.046;stroke-width:2" />
+  <line x1="710" x2="760" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.238;stroke-width:2" />
+  <line x1="760" x2="810" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.064;stroke-width:2" />
+  <line x1="760" x2="810" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.173;stroke-width:2" />
+  <line x1="810" x2="860" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.064;stroke-width:2" />
+  <line x1="393" x2="476" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.021;stroke-width:2" />
+  <line x1="310" x2="393" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.021;stroke-width:2" />
+  <line x1="310" x2="360" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.113;stroke-width:2" />
+  <line x1="360" x2="410" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.113;stroke-width:2" />
+  <line x1="210" x2="260" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.053;stroke-width:2" />
+  <line x1="260" x2="310" y1="560" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.013;stroke-width:2" />
+  <line x1="810" x2="860" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.109;stroke-width:2" />
+  <line x1="860" x2="910" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.054;stroke-width:2" />
+  <line x1="860" x2="910" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0.054;stroke-width:2" />
+  <line x1="910" x2="960" y1="60" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.054;stroke-width:2" />
+</svg>

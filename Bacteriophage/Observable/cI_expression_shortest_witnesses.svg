@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text x="100" y="40" text-anchor="start" font-size="26" fill="black">Expression profile of cI</text>
+  <text x="950" y="600" text-anchor="end" font-size="18" fill="black">Measurements</text>
+  <text x="20" y="300" text-anchor="middle" style="font-size:18;writing-mode:tb;glyph-orientation-vertical:0" fill="black">cI activity level</text>
+  <line x1="60" x2="1060" y1="570" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <text x="60" y="585" text-anchor="middle" fill="black">1</text>
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="560" y="585" text-anchor="middle" fill="black">2</text>
+  <line x1="560" x2="560" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="1060" y="585" text-anchor="middle" fill="black">3</text>
+  <line x1="1060" x2="1060" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="560" text-anchor="end" fill="black">0</text>
+  <line x1="60" x2="1060" y1="560" y2="560" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="310" text-anchor="end" fill="black">1</text>
+  <line x1="60" x2="1060" y1="310" y2="310" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="60" text-anchor="end" fill="black">2</text>
+  <line x1="60" x2="1060" y1="60" y2="60" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <line x1="60" x2="143" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="143" x2="226" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.814;stroke-width:2" />
+  <line x1="226" x2="310" y1="560" y2="310" style="stroke:rgb(50,0,70);stroke-opacity:0.238;stroke-width:2" />
+  <line x1="310" x2="393" y1="310" y2="310" style="stroke:rgb(50,0,70);stroke-opacity:0.424;stroke-width:2" />
+  <line x1="393" x2="476" y1="310" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="476" x2="560" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="560" x2="810" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="810" x2="1060" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="226" x2="310" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0.576;stroke-width:2" />
+  <line x1="310" x2="393" y1="560" y2="310" style="stroke:rgb(50,0,70);stroke-opacity:0.576;stroke-width:2" />
+  <line x1="143" x2="226" y1="560" y2="310" style="stroke:rgb(50,0,70);stroke-opacity:0.186;stroke-width:2" />
+  <line x1="226" x2="310" y1="310" y2="310" style="stroke:rgb(50,0,70);stroke-opacity:0.186;stroke-width:2" />
+</svg>
