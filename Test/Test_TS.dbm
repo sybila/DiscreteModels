@@ -22,14 +22,14 @@
 	<AUTOMATON>
 		<STATE final="0">
 			<TRANSITIONS>
-				<TRANS label="SampleOne=0&SampleTwo=1" target="1" />
 				<TRANS label="tt" target="0" />
+				<TRANS label="SampleOne=0&SampleTwo=1" target="1" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="0">
 			<TRANSITIONS>
-				<TRANS label="SampleOne=1&SampleTwo=0" target="2" />
 				<TRANS label="tt" target="1" />
+				<TRANS label="SampleOne=1&SampleTwo=0" target="2" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="1">
