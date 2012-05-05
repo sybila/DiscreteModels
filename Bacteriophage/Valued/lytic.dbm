@@ -1,5 +1,4 @@
 <MODEL ver="1.0">
-	<MODEL ver="1.0">
 	<STRUCTURE unspec="error">
 		<SPECIE name="cI" max="2" basal="0">
 			<INTERACTIONS>
@@ -61,41 +60,40 @@
 		</SPECIE>
 	</STRUCTURE>
 	<AUTOMATON>
-    <STATE final="0">
-		<TRANSITIONS>
-			<TRANS label="tt" target="0" />
-			<TRANS label="cI=0&amp;cII=0&amp;cro=0&amp;N=0" target="1" />
-		</TRANSITIONS>
-    </STATE>
-	<STATE final="0">
-		<TRANSITIONS>
-			<TRANS label="tt" target="1" />
-			<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=1" target="2" />
-		</TRANSITIONS>
-	</STATE>
-    <STATE final="0">
-		<TRANSITIONS>
-			<TRANS label="tt" target="2" />
-			<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="3" />
-		</TRANSITIONS>
-    </STATE>
-	<STATE final="0">
-		<TRANSITIONS>
-			<TRANS label="tt" target="3" />	
-			<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="4" />
-		</TRANSITIONS>
-	</STATE>
-	<STATE final="0">
-		<TRANSITIONS>
-			<TRANS label="tt" target="4" />	
-			<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="5" />
-		</TRANSITIONS>
-	</STATE>
-	<STATE final="1">
-		<TRANSITIONS>
-			<TRANS label="ff" target="5" />	
-		</TRANSITIONS>
-	</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="0" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=0&amp;N=0" target="1" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="1" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=1" target="2" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="2" />
+				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="3" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="3" />	
+				<TRANS label="cI=0&amp;cII=0&amp;cro=3&amp;N=0" target="4" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="4" />	
+				<TRANS label="cI=0&amp;cII=0&amp;cro=2&amp;N=0" target="5" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="1">
+			<TRANSITIONS>
+				<TRANS label="ff" target="5" />	
+			</TRANSITIONS>
+		</STATE>
 	</AUTOMATON>
 </MODEL>
-

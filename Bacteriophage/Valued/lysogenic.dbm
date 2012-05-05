@@ -1,5 +1,4 @@
 <MODEL ver="1.0">
-	<MODEL ver="1.0">
 	<STRUCTURE unspec="error">
 		<SPECIE name="cI" max="2" basal="0">
 			<INTERACTIONS>

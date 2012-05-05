@@ -2,7 +2,7 @@
 	<STRUCTURE unspec="error">
 		<SPECIE name="a" max="2" basal="0">
 			<INTERACTIONS>
-        <INTER source="0" threshold ="1" label="+" observ="1" />
+				<INTER source="0" threshold ="1" label="+" observ="1" />
 				<INTER source="1" threshold ="1" />
 			</INTERACTIONS>
       <REGULATIONS>
@@ -29,7 +29,7 @@
 		<STATE final="0">
 			<TRANSITIONS>
 				<TRANS label="tt" target="0" />
-				<TRANS label="a=0&amp;b=0" target="1" />
+				<TRANS label="a=0" target="1" />
 			</TRANSITIONS>
 		</STATE>
 		<STATE final="0">
