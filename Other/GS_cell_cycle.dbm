@@ -6,7 +6,7 @@
 				<INTER source="0" threshold ="2" />
 			</INTERACTIONS>
 			<REGULATIONS>
-				<REGUL mask="00" t_value="2" />
+				<REGUL mask="00" t_value="-1" />
 				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="10" t_value="-1" />
 				<REGUL mask="11" t_value="-1" />
@@ -18,7 +18,7 @@
 				<INTER source="0" threshold ="2" />
 			</INTERACTIONS>
 			<REGULATIONS>
-				<REGUL mask="00" t_value="1" />
+				<REGUL mask="00" t_value="-1" />
 				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="10" t_value="-1" />
 				<REGUL mask="11" t_value="-1" />
