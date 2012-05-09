@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text x="100" y="40" text-anchor="start" font-size="26" fill="black">Expression profile of N</text>
+  <text x="950" y="610" text-anchor="end" font-size="18" fill="black">Measurements</text>
+  <text x="20" y="300" text-anchor="middle" style="font-size:18;writing-mode:tb;glyph-orientation-vertical:0" fill="black">N activity level</text>
+  <rect width="30" height="530" x="60" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="60" y="585" text-anchor="middle" fill="black">(0,0,0,0)</text>
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <rect width="60" height="530" x="530" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="560" y="585" text-anchor="middle" fill="black">(2,0,1,1)</text>
+  <line x1="560" x2="560" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <rect width="60" height="530" x="1030" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="1060" y="585" text-anchor="middle" fill="black">(2,0,0,0)</text>
+  <line x1="1060" x2="1060" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="560" text-anchor="end" fill="black">0</text>
+  <line x1="60" x2="1060" y1="560" y2="560" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <text x="58" y="60" text-anchor="end" fill="black">1</text>
+  <line x1="60" x2="1060" y1="60" y2="60" style="stroke:rgb(50,50,50);stroke-opacity:0.5;stroke-width:0.25" />
+  <line x1="60" x2="1060" y1="570" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <path d="M60,560 C73,560 80,510 87,460 L116,160 C122,110 129,60 143,60" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2;fill:none" />
+  <line x1="143" x2="226" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2" />
+  <line x1="226" x2="310" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0,800;stroke-width:2" />
+  <line x1="310" x2="393" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1,000;stroke-width:2" />
+  <line x1="393" x2="476" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1,000;stroke-width:2" />
+  <line x1="476" x2="560" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:1,000;stroke-width:2" />
+  <path d="M560,60 C601,60 622,110 643,160 L727,460 C747,510 768,560 810,560" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2;fill:none" />
+  <line x1="810" x2="1060" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2" />
+  <line x1="60" x2="143" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2" />
+  <path d="M143,560 C156,560 163,510 170,460 L199,160 C205,110 212,60 226,60" style="stroke:rgb(50,0,70);stroke-opacity:0,300;stroke-width:2;fill:none" />
+  <line x1="143" x2="226" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:0,200;stroke-width:2" />
+  <path d="M226,560 C240,560 247,510 254,460 L282,160 C289,110 296,60 310,60" style="stroke:rgb(50,0,70);stroke-opacity:0,200;stroke-width:2;fill:none" />
+  <line x1="560" x2="810" y1="60" y2="60" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2" />
+  <path d="M810,60 C851,60 872,110 893,160 L977,460 C997,510 1018,560 1060,560" style="stroke:rgb(50,0,70);stroke-opacity:0,500;stroke-width:2;fill:none" />
+</svg>
