@@ -6,7 +6,7 @@ do
 	b=0
 	while [ "$b" -lt "$a" ]
 	do
-		../../../Parsybone/GCCProject/Parsybone -st < model.dbm >> output.out
+		../../../Parsybone/GCCProject/Parsybone -st < model.dbm -D "$b" "$a" >> output.out
 		b=`expr $b + 1`
 	done
 	a=`expr $a + 1`
