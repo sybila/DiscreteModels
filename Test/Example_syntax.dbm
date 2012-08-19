@@ -1,0 +1,21 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE undef="basal">
+			<REGUL source="1" threshold ="1" observ="1" />
+			<REGUL source="0" />			
+			<LOGIC formula="(second&!0)" />
+		</SPECIE>
+		<SPECIE name = "second">
+			<REGUL source="0" />
+			<REGUL source="second" label="+" />			
+			<PARAM context="" value="-1" />
+			<PARAM context="0" value="1" />
+			<PARAM context="0,1" value="-1" />			
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="0=0" />
+		<EXPR values="((0=0&amp;1=0)|(0=1&amp;1=1))" />		
+		<EXPR values="(0=1&amp;1=0)" />
+	</SERIES>
+</MODEL>

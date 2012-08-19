@@ -1,0 +1,138 @@
+<MODEL ver="1.0">
+	<STRUCTURE unspec="error">
+		<SPECIE name="FSH" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="1" threshold ="1" label="-" observ="1"/>
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="Foll" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="0" threshold ="1" label="+" observ="1" />
+				<INTER source="1" threshold ="1" label="+" observ="1" />
+				<INTER source="2" threshold ="1" label="-" observ="1" />
+				<INTER source="4" threshold ="1" label="-" observ="1" />
+			</INTERACTIONS>
+      <REGULATIONS>
+        <REGUL mask="0100" t_value="-1" />
+        <REGUL mask="0110" t_value="-1" />
+        <REGUL mask="0101" t_value="-1" />
+        <REGUL mask="0111" t_value="-1" />
+        <REGUL mask="0000" t_value="-1" />
+        <REGUL mask="0010" t_value="-1" />
+        <REGUL mask="0001" t_value="-1" />
+        <REGUL mask="0011" t_value="-1" />
+        <REGUL mask="1100" t_value="-1" />
+        <REGUL mask="1110" t_value="-1" />
+        <REGUL mask="1101" t_value="-1" />
+        <REGUL mask="1111" t_value="-1" />
+        <REGUL mask="1000" t_value="-1" />
+        <REGUL mask="1010" t_value="-1" />
+        <REGUL mask="1001" t_value="-1" />
+        <REGUL mask="1011" t_value="-1" />
+      </REGULATIONS>	
+		</SPECIE>
+		<SPECIE name="LH" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="1" threshold ="1" label="+" observ="1" />
+				<INTER source="4" threshold ="1" label="-" observ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+        <REGUL mask="00" t_value="-1" />
+        <REGUL mask="10" t_value="-1" />
+        <REGUL mask="01" t_value="-1" />
+        <REGUL mask="11" t_value="-1" />
+			</REGULATIONS>			
+		</SPECIE>
+		<SPECIE name="PGF" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="1" threshold ="1" label="+" observ="1" />
+				<INTER source="4" threshold ="1" label="+" observ="1" />
+			</INTERACTIONS>
+      <REGULATIONS>
+        <REGUL mask="00" t_value="-1" />
+        <REGUL mask="10" t_value="-1" />
+        <REGUL mask="01" t_value="-1" />
+        <REGUL mask="11" t_value="-1" />
+      </REGULATIONS>
+    </SPECIE>
+    <SPECIE name="CL" max="1" basal="0">
+      <INTERACTIONS>
+        <INTER source="1" threshold ="1" label="+" observ="1" />
+        <INTER source="2" threshold ="1" label="+" observ="1" />
+        <INTER source="3" threshold ="1" label="-" observ="1" />
+        <INTER source="4" threshold ="1" label="+" observ="1" />
+      </INTERACTIONS>
+      <REGULATIONS>
+        <REGUL mask="0100" t_value="-1" />
+        <REGUL mask="0110" t_value="-1" />
+        <REGUL mask="0101" t_value="-1" />
+        <REGUL mask="0111" t_value="-1" />
+        <REGUL mask="0000" t_value="-1" />
+        <REGUL mask="0010" t_value="-1" />
+        <REGUL mask="0001" t_value="-1" />
+        <REGUL mask="0011" t_value="-1" />
+        <REGUL mask="1100" t_value="-1" />
+        <REGUL mask="1110" t_value="-1" />
+        <REGUL mask="1101" t_value="-1" />
+        <REGUL mask="1111" t_value="-1" />
+        <REGUL mask="1000" t_value="-1" />
+        <REGUL mask="1010" t_value="-1" />
+        <REGUL mask="1001" t_value="-1" />
+        <REGUL mask="1011" t_value="-1" />
+      </REGULATIONS>
+    </SPECIE>
+	</STRUCTURE>
+	<AUTOMATON>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="0" />
+				<TRANS label="Foll=1&amp;PGF=0&amp;CL=0" target="1" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="1" />
+				<TRANS label="Foll=0&amp;PGF=0" target="2" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="2" />
+				<TRANS label="Foll=1&amp;PGF=0&amp;CL=1" target="3" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="3" />
+				<TRANS label="Foll=1&amp;PGF=1&amp;CL=1" target="4" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="4" />
+				<TRANS label="Foll=1&amp;PGF=0&amp;CL=0" target="5" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="5" />
+				<TRANS label="Foll=0&amp;PGF=0&amp;CL=0" target="6" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="tt" target="6" />
+				<TRANS label="Foll=1&amp;PGF=0&amp;CL=0" target="7" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="1">
+			<TRANSITIONS>
+				<TRANS label="ff" target="7" />
+			</TRANSITIONS>
+		</STATE>
+	</AUTOMATON>
+</MODEL>

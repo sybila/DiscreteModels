@@ -1,0 +1,28 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="cI" max="2" >
+			<REGUL source="cI" threshold ="2" label="+" observ="1"/>
+			<REGUL source="cII" threshold ="1" label="+" observ="1"/>
+			<REGUL source="cro" threshold ="1" label="-" observ="1"/>		
+		</SPECIE>
+		<SPECIE name="cII" max="1" >
+			<REGUL source="cI" threshold ="2" label="-" observ="1" />
+			<REGUL source="cro" threshold ="3" label="-" observ="1" />
+			<REGUL source="N" threshold ="1" label="+" observ="1" />			
+		</SPECIE>
+		<SPECIE name="cro" max="3" >
+			<REGUL source="cI" threshold ="2" label="-" observ="1" />
+			<REGUL source="cro" threshold ="3" label="-" observ="1" />		
+		</SPECIE>
+		<SPECIE name="N" max="1" >
+			<REGUL source="cI" threshold ="1" label="-" observ="1" />
+			<REGUL source="cro" threshold ="2" label="-" observ="1" />		
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(((cI=0&amp;cII=0)&amp;cro=0)&amp;N=0)" />
+		<EXPR values="(((cI=2&amp;cII=0)&amp;cro=1)&amp;N=1)" />
+		<EXPR values="(((cI=2&amp;cII=0)&amp;cro=0)&amp;N=0)" />
+	</SERIES>
+</MODEL>
+
