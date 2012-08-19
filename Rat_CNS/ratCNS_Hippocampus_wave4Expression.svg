@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text x="100" y="40" text-anchor="start" font-size="26" fill="black">Expression profile of 4</text>
+  <text x="950" y="610" text-anchor="end" font-size="18" fill="black">Measurements</text>
+  <text x="20" y="300" text-anchor="middle" style="font-size:18;writing-mode:tb;glyph-orientation-vertical:0" fill="black">4 activity level</text>
+  <rect width="30" height="530" x="60" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="60" y="585" text-anchor="middle" fill="black">(1,0,0,0)</text>
+  <rect width="60" height="530" x="363" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="393" y="585" text-anchor="middle" fill="black">(1,1,0,0)</text>
+  <rect width="60" height="530" x="696" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="726" y="585" text-anchor="middle" fill="black">(1,1,1,1)</text>
+  <rect width="60" height="530" x="1030" y="60" style="stroke:rgb(50,50,50);stroke-width:0.25;fill:rgb(135,200,210);opacity:0.4" />
+  <text x="1060" y="585" text-anchor="middle" fill="black">(0,1,1,1)</text>
+  <text x="58" y="560" text-anchor="end" fill="black">0</text>
+  <text x="58" y="60" text-anchor="end" fill="black">1</text>
+  <line x1="60" x2="1060" y1="570" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <line x1="60" x2="60" y1="60" y2="570" style="stroke:rgb(50,50,50);stroke-width:3" />
+  <line x1="60" x2="393" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="393" x2="504" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <line x1="504" x2="615" y1="560" y2="560" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2" />
+  <path d="M615,560 C633,560 642,510 652,460 L689,160 C698,110 707,60 726,60" style="stroke:rgb(50,0,70);stroke-opacity:1.000;stroke-width:2;fill:none" />
+</svg>

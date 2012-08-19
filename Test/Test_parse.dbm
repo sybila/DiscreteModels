@@ -1,0 +1,29 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE undef="basal">
+			<REGUL source="1" threshold ="1" />					
+			<LOGIC formula="a2h" />
+		</SPECIE>
+		<SPECIE name = "a2h">
+			<REGUL source="0" threshold ="1" />
+			<REGUL source="a2h" threshold ="1" />			
+			<PARAM context="" value="-1" />
+			<PARAM context="0" value="-1" />
+			<PARAM context="1" value="-1" />
+			<PARAM context="0,1" value="-1" />			
+		</SPECIE>
+	</STRUCTURE>
+	<AUTOMATON>
+		<STATE final="0" name="aah">
+			<EDGE label="tt" target="aah" />
+			<EDGE label="0=0&a2h=1" target="1" />
+		</STATE>
+		<STATE name = "1">
+			<EDGE label="tt" target="1" />
+			<EDGE label="0=1&a2h=0" target="2" />
+		</STATE>
+		<STATE final="1">
+			<EDGE label="ff" target="2" />
+		</STATE>
+	</AUTOMATON>
+</MODEL>
