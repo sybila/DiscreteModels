@@ -23,21 +23,21 @@
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>
-		<EXPR values="((((CBF1=1&GAL4=1)&GAL80=1)&SWI5=1)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=1)&gal=0)&SWI5=1)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=1)" />
-		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=1)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
-		<EXPR values="(((((CBF1=0&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;SWI5=1)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=1)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=1)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
 	</AUTOMATON>
 </MODEL>
