@@ -1,0 +1,24 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="A">	
+			<REGUL source="B" />
+		</SPECIE>
+		<SPECIE name="B">
+			<REGUL source="A" />		
+		</SPECIE>
+	</STRUCTURE>
+	<AUTOMATON>
+		<STATE>
+			<EDGE label="tt" target="0"/>	
+			<EDGE label="A=0" target="1"/>		
+		</STATE>
+		<STATE final="1">
+			<EDGE label="A=1" target="0"/>
+			<EDGE label="A=0" target="2"/>		
+		</STATE>
+		<STATE>
+			<EDGE label="tt" target="2"/>	
+			<EDGE label="A=1" target="1"/>		
+		</STATE>
+	</AUTOMATON>
+</MODEL>

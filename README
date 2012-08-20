@@ -7,3 +7,207 @@ Contains:
 model files: *.dbm
 computed data: *.psf
 color bitmask: *.cbm
+
+Model:
+	Model is an XML based file with the .dbm suffix. For description, following tags are used:
+	
+	<MODEL>
+	Occurence: single, mandatory
+	Type: pair
+	Parent: none
+	- Encloses the whole model.
+	Attributes:	
+	1) 	ver:
+		Occurece: mandatory
+		Value: must be 1.0
+
+	<STRUCTURE>
+	Occurence: single, mandatory
+	Type: pair
+	Parent: MODEL
+	- Encloses definition of a gene regulatory network.
+	Attributes: none
+	
+	<SPECIE>
+	Occurence: multiple, mandatory
+	Type: pair
+	Parent: STRUCTURE
+	- Defines a single specie.
+	Attributes:	
+	1) 	name:
+		Occurence: optional
+		Value: string containing letters and numbers
+		Default: ordinal number of the tag, counting from zero
+		- Name of the specie under which it will be further addressed. If not given, system uses its ordinal number (so the first specie would have name "0").
+		
+	2)	undef:
+		Occurence: optional
+		Value: basal/param/error
+		Default: param
+		- Tells system how it should handle values of regulatory contexts that are not specified. Basal means using a basal value, param means using all values (parametrized values) and error causes error in case there are unspecified contexts.
+		
+	3)	max:
+		Occurence: optional
+		Value: natural number
+		Default: 1
+		- Maximal activation level this specie can occur in.
+		
+	4)	basal:
+		Occurence: optional
+		Value: positive integer
+		Default: 0
+		- Basal activation level of this specie, towards which the specie tends if not specified otherwise.
+	
+
+	<REGUL>
+	Occurence: multiple, mandatory
+	Type: single
+	Parent: SPECIE	
+	- Defines a single incoming regulation.	
+	Attributes:	
+	1) 	source:
+		Occurence: mandatory
+		Value: name or the ordinal number of regulating specie
+		- Name of the specie that regulates this one.
+		
+	2)	threshold:
+		Occurence: optional
+		Value: natural number
+		Default: 1
+		- Lowest activation level of the source specie that activates the regulation.
+		
+	3)	observ:
+		Occurence: optional
+		Value: + or - or empty
+		Default: empty
+		- Describes nature of the regulation as activation (+) or inhibition (-) or any (empyt).
+		
+	4)	label:
+		Occurence: optional
+		Value: boolean
+		Default: 0
+		- Specifies if the regulation must be observable (1) or can be unobserved (0).
+		
+	<PARAM>
+	Occurence: multiple, present if and only if there is no sibling LOGIC tag
+	Type: single
+	Parent: SPECIE	
+	- Defines a single logical parameter.	
+	Attributes:	
+	1) 	context:
+		Occurence: mandatory
+		Value: comma separated list of active regulations, given by name or ordinal number of the regulator
+		- Defines regulatory context in which this logical parameter is applied.
+		
+	2)	value:
+		Occurence: optional
+		Value: positive integer or -1
+		Default: -1
+		- Speficies target value of the specie in this regulatory context. If the value is parametrized, it might be any between 0 and maximal value of the specie. In this case, -1 is used as an abbreviation.
+		
+	<LOGIC>
+	Occurence: single, present if and only if there is no sibling PARAM tag
+	Type: single
+	Parent: SPECIE
+	- Defines parametrization of the specie based on the logical formula over the incoming interactions.
+	Attributes:	
+	1) 	formula:
+		Occurence: mandatory
+		Value: logical formula (see part Formula construction below), variables are names or ordinal number of regulators
+		- Result target value is given as a valuation of the formula, where a variable denotig a regulator is valuated to 1 if the regulation is active and to 0 otherwise
+		
+	<AUTOMATON>
+	Occurence: single, present if and only if there is no sibling SERIES tag
+	Type: pair
+	Parent: MODEL
+	- Encloses definition of a Buchi automaton controlling the property.
+	Attributes: none	
+
+	<STATE>
+	Occurence: multiple, mandatory
+	Type: single
+	Parent: AUTOMATON
+	- Defines a single state of the automaton. First state described is considered to be also initial.
+	Attributes:	
+	1) 	name:
+		Occurence: optional
+		Value: string containing letters and numbers
+		Default: ordinal number of the tag, counting from zero
+		- Name of the state under which it will be further addressed. If not given, system uses its ordinal number (so the first state would have name "0").
+		
+	2)	final:
+		Occurence: optional
+		Value: boolean
+		Default: 0
+		- Specifies if the state is final (1) or not (0).
+		
+	<EDGE>
+	Occurence: multiple, mandatory
+	Type: single
+	Parent: STATE	
+	- Defines a edge leaving from the parent state.	
+	Attributes:	
+	1) 	target:
+		Occurence: mandatory
+		Value: name or the ordinal number of a target state
+		
+	2)	label:
+		Occurence: mandatory
+		Value: logical formula (see part Formula construction below), variables are atomic propositions (see part Atomic propositions below)
+		- Conditions that must be met for the edge to be transitible.	
+		
+	
+	<SERIES>
+	Occurence: single,  present if and only if there is no sibling AUTOMATON tag
+	Type: pair
+	Parent: MODEL
+	- Encloses definition of a Time series that must be reconstructed.
+	Attributes: none	
+	
+	<EXPR>
+	Occurence: multiple, mandatory
+	Type: single
+	Parent: SERIES	
+	- A single expression measurement in the time series.	
+	Attributes:		
+	1)	values:
+		Occurence: mandatory
+		Value: logical formula (see part Formula construction below), variables are atomic propositions (see part Atomic propositions below)
+		- Conditions that must be met for the measurement to be reproduced.	
+		
+	
+Formula construction:
+	-# tt and ff are formulas representing true or false respectively
+	-# any variable is a formula
+	-# for A formula is !A formula
+	-# for A,B formulas are (A|B) and (A&B) formulas representing logical disjunction and conjunction respectively; & can be denoted using an XML entity "&amp;"
+	-# nothing else is a formula
+
+Atomic propositions:
+	- atomic proposition are in the form: "specie*value"
+	- specie denotes name or ordinal number of a specie
+	- * denotes comparison operator which may be on from {<,>,=}
+	- value denotes a positive integet with which the value of the specie is compared
+	
+Example:
+	<MODEL ver="1.0">
+		<STRUCTURE>
+			<SPECIE undef="basal">
+				<REGUL source="1" threshold ="1" observ="1" />
+				<REGUL source="0" />			
+				<LOGIC formula="(second&!0)" />
+			</SPECIE>
+			<SPECIE name = "second">
+				<REGUL source="0" />
+				<REGUL source="second" label="+" />			
+				<PARAM context="" value="-1" />
+				<PARAM context="0" value="1" />
+				<PARAM context="0,1" value="-1" />			
+			</SPECIE>
+		</STRUCTURE>
+		<SERIES>
+			<EXPR values="0=0" />
+			<EXPR values="((0=0&amp;1=0)|(0=1&amp;1=1))" />		
+			<EXPR values="(0=1&amp;1=0)" />
+		</SERIES>
+	</MODEL>

@@ -1,0 +1,43 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="CBF1">
+			<REGUL source="SWI5" />
+			<REGUL source="ASH1"/>			
+		</SPECIE>
+		<SPECIE name="GAL4">			
+			<REGUL source="CBF1" />			
+		</SPECIE>
+		<SPECIE name="SWI5">			
+			<REGUL source="GAL4" />
+			<REGUL source="gal" />
+			<REGUL source="GAL80" />			
+		</SPECIE>
+		<SPECIE name="ASH1">			
+			<REGUL source="SWI5" />			
+		</SPECIE>
+		<SPECIE name="gal">			
+			<REGUL source="gal"/>			
+		</SPECIE>
+		<SPECIE name="GAL80">			
+			<REGUL source="SWI5" />			
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="((((CBF1=1&GAL4=1)&GAL80=1)&SWI5=1)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=1)&gal=0)&SWI5=1)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=1)" />
+		<EXPR values="(((((CBF1=1&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=1&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=1)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=1)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=1)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+		<EXPR values="(((((CBF1=0&GAL4=0)&GAL80=0)&gal=0)&SWI5=0)&ASH1=0)" />
+	</AUTOMATON>
+</MODEL>
