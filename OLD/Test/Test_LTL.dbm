@@ -1,0 +1,42 @@
+<MODEL ver="1.0">
+	<STRUCTURE unspec="error">
+		<SPECIE name="SampleOne" max="1" basal="1">
+			<INTERACTIONS>
+				<INTER source="1" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+		<SPECIE name="SampleTwo" max="1" basal="0">
+			<INTERACTIONS>
+				<INTER source="0" threshold ="1" />
+			</INTERACTIONS>
+			<REGULATIONS>
+				<REGUL mask="0" t_value="-1" />
+				<REGUL mask="1" t_value="-1" />
+			</REGULATIONS>
+		</SPECIE>
+	</STRUCTURE>
+	<AUTOMATON>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="SampleOne=1" target="1" />
+				<TRANS label="SampleOne=0" target="0" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="1">
+			<TRANSITIONS>
+				<TRANS label="SampleOne=1" target="2" />
+				<TRANS label="SampleOne=0" target="0" />
+			</TRANSITIONS>
+		</STATE>
+		<STATE final="0">
+			<TRANSITIONS>
+				<TRANS label="SampleOne=1" target="2" />
+				<TRANS label="SampleOne=0" target="1" />
+			</TRANSITIONS>
+		</STATE>
+	</AUTOMATON>
+</MODEL>

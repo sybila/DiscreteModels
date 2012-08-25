@@ -1,0 +1,43 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="CBF1">
+			<REGUL source="SWI5" />
+			<REGUL source="ASH1"/>			
+		</SPECIE>
+		<SPECIE name="GAL4">			
+			<REGUL source="CBF1" />			
+		</SPECIE>
+		<SPECIE name="SWI5">			
+			<REGUL source="GAL4" />
+			<REGUL source="gal" />
+			<REGUL source="GAL80" />			
+		</SPECIE>
+		<SPECIE name="ASH1">			
+			<REGUL source="SWI5" />			
+		</SPECIE>
+		<SPECIE name="gal">			
+			<REGUL source="gal"/>			
+		</SPECIE>
+		<SPECIE name="GAL80">			
+			<REGUL source="SWI5" />			
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;SWI5=1)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=1)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=1)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=1&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=1)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=1)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+		<EXPR values="(((((CBF1=0&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
+	</AUTOMATON>
+</MODEL>
