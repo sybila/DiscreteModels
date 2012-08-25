@@ -1,0 +1,13 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="A" >
+			<REGUL source="A" />	
+			<REGUL source="B" />
+			<PARAM context="0" value="2" />
+		</SPECIE>
+		<SPECIE name="B">
+			<REGUL source="A" />	
+			<REGUL source="B" />	
+		</SPECIE>
+	</STRUCTURE>
+</MODEL>

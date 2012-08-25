@@ -1,0 +1,30 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE max="7">
+			<REGUL source="0" />	
+			<REGUL source="1" />
+			<REGUL source="2" />
+			<PARAM context="" value="0" />	
+			<PARAM context="0" value="1" />				
+			<PARAM context="1" value="2" />	
+			<PARAM context="2" value="3" />		
+			<PARAM context="0,1" value="4" />				
+			<PARAM context="0,2" value="5" />	
+			<PARAM context="1,2" value="6" />	
+			<PARAM context="0,1,2" value="7" />				
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="1" />
+			<PARAM context="" value="0" />	
+			<PARAM context="1" value="1" />				
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="2" />
+			<PARAM context="" value="0" />	
+			<PARAM context="2" value="1" />				
+		</SPECIE>		
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>
