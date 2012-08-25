@@ -14,6 +14,6 @@
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>
-		<EXPR values="(0=0&1=0)" />
+		<EXPR values="tt" />
 	</SERIES>
 </MODEL>
