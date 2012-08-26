@@ -1,0 +1,16 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE max="2">
+			<REGUL source="0" />	
+			<REGUL source="1" />
+		</SPECIE>
+		<SPECIE max="2">
+			<REGUL source="0" />	
+			<REGUL source="1" />		
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(0=0&1=0)" />
+		<EXPR values="(0=2&1=2)" />
+	</SERIES>
+</MODEL>

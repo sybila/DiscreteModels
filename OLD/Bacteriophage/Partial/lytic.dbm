@@ -8,12 +8,12 @@
 			</INTERACTIONS>
 			<REGULATIONS>
 				<REGUL mask="000" t_value="-1" />
-				<REGUL mask="001" t_value="-1" />
-				<REGUL mask="010" t_value="-1" />
-				<REGUL mask="011" t_value="-1" />
 				<REGUL mask="100" t_value="-1" />
-				<REGUL mask="101" t_value="-1" />
+				<REGUL mask="010" t_value="-1" />
+				<REGUL mask="001" t_value="-1" />
 				<REGUL mask="110" t_value="-1" />
+				<REGUL mask="101" t_value="-1" />
+				<REGUL mask="011" t_value="-1" />
 				<REGUL mask="111" t_value="-1" />
 			</REGULATIONS>			
 		</SPECIE>
@@ -25,12 +25,12 @@
 			</INTERACTIONS>
 			<REGULATIONS>
 				<REGUL mask="000" t_value="-1" />
-				<REGUL mask="001" t_value="-1" />
-				<REGUL mask="010" t_value="-1" />
-				<REGUL mask="011" t_value="-1" />
 				<REGUL mask="100" t_value="-1" />
-				<REGUL mask="101" t_value="-1" />
+				<REGUL mask="010" t_value="-1" />
+				<REGUL mask="001" t_value="-1" />
 				<REGUL mask="110" t_value="-1" />
+				<REGUL mask="101" t_value="-1" />
+				<REGUL mask="011" t_value="-1" />
 				<REGUL mask="111" t_value="-1" />
 			</REGULATIONS>			
 		</SPECIE>
@@ -41,8 +41,8 @@
 			</INTERACTIONS>
 			<REGULATIONS>
 				<REGUL mask="00" t_value="-1" />
-				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="10" t_value="-1" />
+				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="11" t_value="-1" />
 			</REGULATIONS>			
 		</SPECIE>
@@ -53,8 +53,8 @@
 			</INTERACTIONS>
 			<REGULATIONS>
 				<REGUL mask="00" t_value="-1" />
-				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="10" t_value="-1" />
+				<REGUL mask="01" t_value="-1" />
 				<REGUL mask="11" t_value="-1" />
 			</REGULATIONS>			
 		</SPECIE>

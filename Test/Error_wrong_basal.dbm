@@ -1,0 +1,15 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE undef="basal" >
+			<REGUL source="0" />	
+			<REGUL source="1" />
+		</SPECIE>
+		<SPECIE basal="2" undef="basal" >
+			<REGUL source="0" />	
+			<REGUL source="1" />		
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>

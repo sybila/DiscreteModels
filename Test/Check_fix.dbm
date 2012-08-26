@@ -1,0 +1,25 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE>
+			<REGUL source="0" />	
+			<REGUL source="1" />
+			<REGUL source="2" />
+			<LOGIC formula="(!(0&1)|!2)" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="0" />	
+			<REGUL source="2" />	
+			<LOGIC formula="(0|2)" />			
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="1" />	
+			<REGUL source="2" />
+			<LOGIC formula="(!1&2)" />					
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(0=0&1=0)" />
+		<EXPR values="(0=1&1=1)" />
+		<EXPR values="(0=0&1=0)" />
+	</SERIES>
+</MODEL>
