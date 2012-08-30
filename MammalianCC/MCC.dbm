@@ -1,0 +1,66 @@
+<MODEL ver="1.0">
+	<STRUCTURE unspec="error">
+		<SPECIE name="Rb" >
+			<REGUL source="CycE" label="-" observ="1" />
+			<REGUL source="CycA" label="-" observ="1" />
+			<REGUL source="p27" label="+" observ="1" />
+			<REGUL source="CycB" label="-" observ="1" />	
+		</SPECIE>	
+		<SPECIE name="E2F" >
+			<REGUL source="Rb" label="-" observ="1" />	
+			<REGUL source="CycA" label="-" observ="1" />	
+			<REGUL source="p27" label="+" observ="1" />				
+			<REGUL source="CycB" label="-" observ="1" />		
+		</SPECIE>
+		<SPECIE name="CycE" >
+			<REGUL source="Rb" label="-" />
+			<REGUL source="E2F" label="+" observ="1" />							
+		</SPECIE>
+		<SPECIE name="CycA" >
+			<REGUL source="Rb" label="-" observ="1" />
+			<REGUL source="E2F" label="+" observ="1" />
+			<REGUL source="CycA" label="+" observ="1" />
+			<REGUL source="Cdc20" label="-" observ="1" />
+			<REGUL source="Cdh1" label="-" observ="1" />
+			<REGUL source="UbcH10" label="-" observ="1" />
+			<LOGIC formula="(((!Rb&amp;!Cdc20)&amp;!(Cdh1&amp;UbcH10))&amp;(E2F|CycA))" />
+		</SPECIE>
+		<SPECIE name="p27" >
+			<REGUL source="CycE" label="-" observ="1" />	
+			<REGUL source="CycA" label="-" observ="1" />	
+			<REGUL source="p27" label="+" observ="1" />				
+			<REGUL source="CycB" label="-" observ="1" />				
+		</SPECIE>
+		<SPECIE name="Cdc20">
+			<REGUL source="CycB" label="+" observ="1" />					
+		</SPECIE>
+		<SPECIE name="Cdh1">
+			<REGUL source="CycA" label="-" observ="1" />	
+			<REGUL source="p27" label="+" observ="1" />	
+			<REGUL source="Cdc20" label="+" observ="1" />				
+			<REGUL source="CycB" label="-" observ="1" />				
+		</SPECIE>
+		<SPECIE name="UbcH10">
+			<REGUL source="CycA" label="+" observ="1" />
+			<REGUL source="Cdc20" label="+" observ="1" />
+			<REGUL source="Cdh1" label="-" observ="1" />
+			<REGUL source="UbcH10" label="+" observ="1" />
+			<REGUL source="CycB" label="+" observ="1" />	
+			<LOGIC formula="(!Cdh1|(UbcH10&amp;(Cdc20|(CycA|CycB))))" />
+		</SPECIE>
+		<SPECIE name="CycB">
+			<REGUL source="Cdc20" label="-" observ="1" />
+			<REGUL source="Cdh1" label="-" observ="1" />							
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="((((((((Rb=0&amp;E2F=0)&amp;CycE=0)&amp;CycA=0)&amp;p27=0)&amp;Cdc20=1)&amp;Cdh1=1)&amp;UbcH10=1)&amp;CycB=0)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=1)&amp;CycE=0)&amp;CycA=0)&amp;p27=0)&amp;Cdc20=0)&amp;Cdh1=1)&amp;UbcH10=1)&amp;CycB=0)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=1)&amp;CycE=1)&amp;CycA=0)&amp;p27=0)&amp;Cdc20=0)&amp;Cdh1=1)&amp;UbcH10=0)&amp;CycB=0)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=1)&amp;CycE=1)&amp;CycA=1)&amp;p27=0)&amp;Cdc20=0)&amp;Cdh1=1)&amp;UbcH10=0)&amp;CycB=0)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=0)&amp;CycE=1)&amp;CycA=1)&amp;p27=0)&amp;Cdc20=0)&amp;Cdh1=0)&amp;UbcH10=0)&amp;CycB=0)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=0)&amp;CycE=0)&amp;CycA=1)&amp;p27=0)&amp;Cdc20=0)&amp;Cdh1=0)&amp;UbcH10=1)&amp;CycB=1)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=0)&amp;CycE=0)&amp;CycA=1)&amp;p27=0)&amp;Cdc20=1)&amp;Cdh1=0)&amp;UbcH10=1)&amp;CycB=1)" />
+		<EXPR values="((((((((Rb=0&amp;E2F=0)&amp;CycE=0)&amp;CycA=0)&amp;p27=0)&amp;Cdc20=1)&amp;Cdh1=1)&amp;UbcH10=1)&amp;CycB=0)" />
+	</SERIES>
+</MODEL>
