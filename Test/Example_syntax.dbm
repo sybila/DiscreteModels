@@ -3,13 +3,14 @@
 		<SPECIE undef="basal">
 			<REGUL source="1" threshold ="1" observ="1" />
 			<REGUL source="0" />			
-			<LOGIC formula="(second&!0)" />
+			<LOGIC formula="(second &amp; !0)" />
 		</SPECIE>
 		<SPECIE name = "second">
 			<REGUL source="0" />
 			<REGUL source="second" label="+" />			
 			<PARAM context="" value="-1" />
 			<PARAM context="second" value="1" />
+			<PARAM context="0" value="0" />
 			<PARAM context="0,1" value="-1" />			
 		</SPECIE>
 	</STRUCTURE>
