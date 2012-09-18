@@ -39,5 +39,5 @@
 		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=1)&amp;ASH1=0)" />
 		<EXPR values="(((((CBF1=0&amp;GAL4=1)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
 		<EXPR values="(((((CBF1=0&amp;GAL4=0)&amp;GAL80=0)&amp;gal=0)&amp;SWI5=0)&amp;ASH1=0)" />
-	</AUTOMATON>
+	</SERIES>
 </MODEL>
