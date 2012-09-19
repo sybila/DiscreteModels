@@ -5,4 +5,11 @@ open-source 2012, GNU GPL v3
 
 This repository suits as a storage for models of regulatory networks written using a DBM language. These models are suitable for use with the Parsybone model checker (https://github.com/sybila/Parsybone). For a usage or language description, refer to Parsybone Manual (https://github.com/sybila/Parsybone-manual).
 
+Content of the folders:
+Bacteriophage: Models of lythic and lysogenic fate of a cell infected by a Bacteriophage lambda.
+IRMA: Model of an IRMA network.
+MammalianCC: Model of a mammalian cell cycle.
+Rat_CNS: Model of neural developent in a mouse.
+Test: Models that are used for testin of the Parsybone tool together with a testing script.
+
 
