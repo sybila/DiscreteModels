@@ -21,7 +21,7 @@
 	</STRUCTURE>
 	<SERIES>
 		<EXPR values="(((cI=0&amp;cII=0)&amp;cro=0)&amp;N=0)" />
-		<EXPR values="(((cI=2&amp;cII=0)&amp;cro=1)&amp;N=1)" />
+		<EXPR values="(((cI=2&amp;cII=1)&amp;cro=0)&amp;N=1)" />
 		<EXPR values="(((cI=2&amp;cII=0)&amp;cro=0)&amp;N=0)" />
 	</SERIES>
 </MODEL>

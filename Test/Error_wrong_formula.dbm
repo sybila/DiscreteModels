@@ -3,7 +3,7 @@
 		<SPECIE name="A" >
 			<REGUL source="A" />	
 			<REGUL source="B" />
-			<LOGIC formula="(second&|!0)" />
+			<LOGIC formula="(A & | !0)" />
 		</SPECIE>
 		<SPECIE name="B">
 			<REGUL source="A" />	

@@ -5,7 +5,7 @@
 		</SPECIE>
 		<SPECIE name="B">
 			<REGUL source="A" />	
-			<REGUL source="2" />	
+			<REGUL source="C" />	
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>
