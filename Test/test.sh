@@ -1,7 +1,7 @@
 #must have executable as a first parameter
 PARSYBONE=$1
 #tests that are supposed to raise exception
-for i in Error*
+for i in Error*.dbm
 do
 	echo "$i"
 	$PARSYBONE $i 2>/dev/null 1>/dev/null
@@ -11,7 +11,7 @@ do
 	fi
 done
 #tests that are supposed to work out
-for i in Test*
+for i in Test*.dbm
 do
 	echo "$i"
 	$PARSYBONE $i 2>/dev/null 1>/dev/null

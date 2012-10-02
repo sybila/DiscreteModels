@@ -1,0 +1,16 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE>
+			<REGUL source="0" />	
+			<REGUL source="1" />
+			<LOGIC formula=" ( 0 |	1	)" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="0" />	
+			<REGUL source="1" />		
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="  !  (  0  &lt;  0 &amp; 1  =0 )" />
+	</SERIES>
+</MODEL>
