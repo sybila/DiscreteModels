@@ -7,3 +7,10 @@ Tests - files that are simple required to go through smoothly
 Checks - these files contain more specific models whose results are further checked.
 
 Errors description
+error_targe_value_below_zero.dbm : one logical parameter is below zero
+error_targe_value_over_maximal_level.dbm : one logical parameter is above maximal activation level of the regulated specie
+error_threshold_below_zero.dbm : one threshold of a regulation is lower than 0
+error_threshold_mixed.dbm : one threshold has correct value, but is followed by some string
+error_threshold_nonnumerical.dbm : one threshold is given by a symbol
+error_threshold_over_maximal_level.dbm : one threshold is higher than the maximal level of the regulator
+error_threshold_zero.dbm : one threshold is zero, which is forbidden since it does not really make sense from the biological point of view

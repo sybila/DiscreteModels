@@ -1,4 +1,4 @@
-<MODEL ver="1.0">
+<MODEL ver="1.1">
 	<STRUCTURE unspec="error">
 		<SPECIE>
 			<REGUL source="1" threshold="1" label="-" />

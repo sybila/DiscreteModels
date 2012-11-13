@@ -1,8 +1,8 @@
 <MODEL ver="1.0">
 	<STRUCTURE>
 		<SPECIE name="A" >
-			<REGUL source="A" threshold="2" />	
-			<PARAM context="A" />
+			<REGUL source="A" />	
+			<PARAM context="A" value="-1" />
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>

@@ -5,7 +5,7 @@ for i in error*.dbm
 do
 	echo "$i"
 	$PARSYBONE $i 2>/dev/null 1>/dev/null
-	if [ $? != 1 ]
+	if [[ $? != 1 && $? != 2 ]]
 	then
 		echo "	did not returned error value."
 	fi
