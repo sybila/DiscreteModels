@@ -1,0 +1,9 @@
+Test files count for testing of different capabilities of the Parsybone tool.
+All the tests can be executed at once using the test.sh Unix script.
+
+There are 3 sorts of files, denoted by the first word in the name of the file:
+Errors - models that are supposed to result with a failure, they all test for error during the parsing, therefore their error value should be equal to 1.
+Tests - files that are simple required to go through smoothly
+Checks - these files contain more specific models whose results are further checked.
+
+Errors description
