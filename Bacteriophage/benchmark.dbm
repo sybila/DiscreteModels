@@ -1,0 +1,37 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="cI" max="2" >
+			<REGUL source="cI" threshold ="2" />
+			<REGUL source="cII" threshold ="1" />
+			<REGUL source="cro" threshold ="1" />	
+			<PARAM context="" value="2" />	
+			<PARAM context="cI" value="2" />
+			<PARAM context="cII,cro" value="2" />
+			<PARAM context="cI,cro" value="0" />
+			<PARAM context="cI,cII" value="2" />
+			<PARAM context="cI,cII,cro" value="2" />
+		</SPECIE>
+		<SPECIE name="cII" max="1" >
+			<REGUL source="cI" threshold ="2"  />
+			<REGUL source="cro" threshold ="3"  />
+			<REGUL source="N" threshold ="1"  />	
+			<PARAM context="" value="0" />		
+		</SPECIE>
+		<SPECIE name="cro" max="3" >
+			<REGUL source="cI" threshold ="2"  />
+			<REGUL source="cro" threshold ="3"  />
+			<PARAM context="" value="3" />		
+		</SPECIE>
+		<SPECIE name="N" max="1" >
+			<REGUL source="cI" threshold ="1"  />
+			<REGUL source="cro" threshold ="2"  />	
+			<PARAM context="" value="1" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(((cI=0&amp;cII=0)&amp;cro=0)&amp;N=0)" />
+		<EXPR values="(((cI=2&amp;cII=1)&amp;cro=0)&amp;N=1)" />
+		<EXPR values="(((cI=2&amp;cII=0)&amp;cro=0)&amp;N=0)" />
+	</SERIES>
+</MODEL>
+

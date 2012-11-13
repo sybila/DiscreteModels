@@ -1,18 +1,18 @@
 <MODEL ver="1.0">
 	<STRUCTURE>
 		<SPECIE name="cI" max="2" >
-			<REGUL source="cI" threshold ="2" label="+" />
-			<REGUL source="cII" threshold ="1" label="+" observ="1"/>
-			<REGUL source="cro" threshold ="1" label="-" observ="1"/>		
+			<REGUL source="cI" threshold ="2" label="mon+" />
+			<REGUL source="cII" threshold ="1" label="+" />
+			<REGUL source="cro" threshold ="1" label="-" />		
 			<PARAM context="cI,cII" value="2" />
 			<PARAM context="cI,cro" value="2" />
 			<PARAM context="cII,cro" value="2" />	
 			<PARAM context="cI,cII,cro" value="2" />				
 		</SPECIE>
 		<SPECIE name="cII" max="1" >
-			<REGUL source="cI" threshold ="2" label="-" observ="1" />
-			<REGUL source="cro" threshold ="3" label="-" observ="1" />
-			<REGUL source="N" threshold ="1" label="+" observ="1" />	
+			<REGUL source="cI" threshold ="2" label="-" />
+			<REGUL source="cro" threshold ="3" label="-" />
+			<REGUL source="N" threshold ="1" label="+" />	
 			<PARAM context="" value="1" />
 			<PARAM context="cI" value="0" />
 			<PARAM context="cro" value="0" />
@@ -23,16 +23,16 @@
 			<PARAM context="cI,cro,N" value="0" />				
 		</SPECIE>
 		<SPECIE name="cro" max="3" >
-			<REGUL source="cI" threshold ="2" label="-" observ="1" />
-			<REGUL source="cro" threshold ="3" label="-" observ="1" />	
+			<REGUL source="cI" threshold ="2" label="-" />
+			<REGUL source="cro" threshold ="3" label="-" />	
 			<PARAM context="" value="3" />
 			<PARAM context="cI" value="0" />
 			<PARAM context="cro" value="2" />
 			<PARAM context="cI,cro" value="0" />				
 		</SPECIE>
 		<SPECIE name="N" max="1" >
-			<REGUL source="cI" threshold ="1" label="-" observ="1" />
-			<REGUL source="cro" threshold ="2" label="-" observ="1" />	
+			<REGUL source="cI" threshold ="1" label="-" />
+			<REGUL source="cro" threshold ="2" label="-" />	
 			<PARAM context="" value="1" />
 			<PARAM context="cI" value="0" />
 			<PARAM context="cro" value="0" />

@@ -9,7 +9,7 @@
 		</SPECIE>
 		<SPECIE>
 			<REGUL source="0" threshold="1" label="+" />
-			<REGUL source="3" threshold="1" label="mon-" />
+			<REGUL source="3" threshold="1" label="-" />
 		</SPECIE>
 		<SPECIE>
 			<REGUL source="0" threshold="1" label="+" />

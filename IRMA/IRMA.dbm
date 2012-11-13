@@ -16,7 +16,7 @@
 			<REGUL source="SWI5" />			
 		</SPECIE>
 		<SPECIE name="gal">			
-			<REGUL source="gal"/>			
+			<REGUL source="gal" />			
 		</SPECIE>
 		<SPECIE name="GAL80">			
 			<REGUL source="SWI5" />			

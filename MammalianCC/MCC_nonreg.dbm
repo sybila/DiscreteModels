@@ -1,56 +1,55 @@
+<!-- 2^(16+16+4+64+16+2+16+32+4) = 10^50 -->
 <MODEL ver="1.0">
 	<STRUCTURE unspec="error">
 		<SPECIE name="Rb" >
-			<REGUL source="CycE" label="-" />
-			<REGUL source="CycA" label="-" />
-			<REGUL source="p27" label="+" />
-			<REGUL source="CycB" label="-" />	
+			<REGUL source="CycE" />
+			<REGUL source="CycA" />
+			<REGUL source="p27" />
+			<REGUL source="CycB" />	
 		</SPECIE>	
 		<SPECIE name="E2F" >
-			<REGUL source="Rb" label="-" />	
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />				
-			<REGUL source="CycB" label="-" />		
+			<REGUL source="Rb" />	
+			<REGUL source="CycA" />	
+			<REGUL source="p27" />				
+			<REGUL source="CycB" />		
 		</SPECIE>
 		<SPECIE name="CycE" >
-			<REGUL source="Rb" label="mon-" />
-			<REGUL source="E2F" label="+" />							
+			<REGUL source="Rb" />
+			<REGUL source="E2F" />							
 		</SPECIE>
 		<SPECIE name="CycA" >
-			<REGUL source="Rb" label="-" />
-			<REGUL source="E2F" label="+" />
-			<REGUL source="CycA" label="+" />
-			<REGUL source="Cdc20" label="-" />
-			<REGUL source="Cdh1" label="-" />
-			<REGUL source="UbcH10" label="-" />
-			<LOGIC formula="(((!Rb&amp;!Cdc20)&amp;!(Cdh1&amp;UbcH10))&amp;(E2F|CycA))" />
+			<REGUL source="Rb" />
+			<REGUL source="E2F" />
+			<REGUL source="CycA" />
+			<REGUL source="Cdc20" />
+			<REGUL source="Cdh1" />
+			<REGUL source="UbcH10" />
 		</SPECIE>
 		<SPECIE name="p27" >
-			<REGUL source="CycE" label="-" />	
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />				
-			<REGUL source="CycB" label="-" />				
+			<REGUL source="CycE" />	
+			<REGUL source="CycA" />	
+			<REGUL source="p27" />				
+			<REGUL source="CycB" />				
 		</SPECIE>
 		<SPECIE name="Cdc20">
-			<REGUL source="CycB" label="+" />					
+			<REGUL source="CycB" />					
 		</SPECIE>
 		<SPECIE name="Cdh1">
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />	
-			<REGUL source="Cdc20" label="+" />				
-			<REGUL source="CycB" label="-" />				
+			<REGUL source="CycA" />	
+			<REGUL source="p27" />	
+			<REGUL source="Cdc20" />				
+			<REGUL source="CycB" />				
 		</SPECIE>
 		<SPECIE name="UbcH10">
-			<REGUL source="CycA" label="+" />
-			<REGUL source="Cdc20" label="+" />
-			<REGUL source="Cdh1" label="-" />
-			<REGUL source="UbcH10" label="+" />
-			<REGUL source="CycB" label="+" />	
-			<LOGIC formula="(!Cdh1|(UbcH10&amp;(Cdc20|(CycA|CycB))))" />
+			<REGUL source="CycA" />
+			<REGUL source="Cdc20" />
+			<REGUL source="Cdh1" />
+			<REGUL source="UbcH10" />
+			<REGUL source="CycB" />	
 		</SPECIE>
 		<SPECIE name="CycB">
-			<REGUL source="Cdc20" label="-" />
-			<REGUL source="Cdh1" label="-" />							
+			<REGUL source="Cdc20" />
+			<REGUL source="Cdh1" />							
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>

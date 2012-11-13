@@ -1,0 +1,20 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE max="1" name="A">
+			<REGUL source="1" threshold="1" />	
+			<REGUL source="1" threshold="2" />
+			<PARAM context="" value="1" />
+			<PARAM context="B:1" value="1" />
+			<PARAM context="B:2" value="1" />
+			<PARAM context="B:1,B:2" value="1" />
+		</SPECIE>
+		<SPECIE max="2" name="B">
+			<REGUL source="0" />	
+			<REGUL source="1" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(0=0&1=0)" />
+		<EXPR values="(0=1&1=2)" />
+	</SERIES>
+</MODEL>
