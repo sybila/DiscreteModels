@@ -1,0 +1,20 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE name="A" basal="1" undef="basal" >
+			<REGUL source="A" label="!+" />	
+			<REGUL source="B" label="ActivatingOnly" />
+			<PARAM context="A" value="0" />	
+		</SPECIE>
+		<SPECIE name="B" >
+			<REGUL source="B" label="((!+ &amp; !-) | (+ &amp; -))" />	
+			<REGUL source="A" label="Free" />	
+			<PARAM context="B" value="1" />
+			<PARAM context="A" value="1" />
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(A=0 &amp; B=0)" />
+		<EXPR values="!(A=0 | B=0)" />
+		<EXPR values="(A=0 &amp; B=0)" />
+	</SERIES>
+</MODEL>

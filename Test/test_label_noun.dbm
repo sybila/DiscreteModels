@@ -1,0 +1,34 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="A" >
+			<REGUL source="A" label="Activating" />	
+		</SPECIE>
+		<SPECIE name="B" >
+			<REGUL source="B" label="NotInhibiting" />	
+		</SPECIE>
+		<SPECIE name="C" >
+			<REGUL source="C" label="ActivatingOnly" />	
+		</SPECIE>
+		<SPECIE name="D" >
+			<REGUL source="D" label="Inhibiting" />	
+		</SPECIE>
+		<SPECIE name="E" >
+			<REGUL source="E" label="NotActivating" />	
+		</SPECIE>
+		<SPECIE name="F" >
+			<REGUL source="F" label="InhibitingOnly" />	
+		</SPECIE>
+		<SPECIE name="G" >
+			<REGUL source="G" label="Observable" />	
+		</SPECIE>
+		<SPECIE name="H" >
+			<REGUL source="H" label="NotObservable" />	
+		</SPECIE>
+		<SPECIE name="I" >
+			<REGUL source="I" label="Free" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>

@@ -1,0 +1,16 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="A" >
+			<REGUL source="A" label="!+" />	
+		</SPECIE>
+		<SPECIE name="B" >
+			<REGUL source="B" label="((!+ &amp; !-) | (+ &amp; -))" />	
+		</SPECIE>
+		<SPECIE name="C" >
+			<REGUL source="C" label="(+ | (- | !+))" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>

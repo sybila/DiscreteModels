@@ -2,11 +2,20 @@ Test files count for testing of different capabilities of the Parsybone tool.
 All the tests can be executed at once using the test.sh Unix script.
 
 There are 3 sorts of files, denoted by the first word in the name of the file:
-Errors - models that are supposed to result with a failure, they all test for error during the parsing, therefore their error value should be equal to 1.
-Tests - files that are simple required to go through smoothly
 Checks - these files contain more specific models whose results are further checked.
+Errors - models that are supposed to result with a failure (mostly because of wrong syntax)
+Tests - files that are simple required to go through smoothly
 
-Errors description
+Checks description:
+check_basic.dbm : this file contains simple model with partial parametrization, which has a single resulting parametrization that is compared to what it actually produces during check
+check_distribution.dbm : this very simple model is partitioned and then sum of parametrizations from the partitions is compared to an output of a single run
+check_label.dbm : this model apart from others contains multiple different edge labels that result in it being allowed to produce only a single parametrization that is checked
+check_mask1.dbm, check_mask2.dbm : currently unused
+check_parametrized.dbm : this model is fully parametrized and produces only a single parametrization
+
+Errors description:
+error_label_formula.dbm : a formula given as an edge lable is syntactically incorrect
+error_label_noun.dbm : a noun describing an edge label is syntactically incorrect 
 error_targe_value_below_zero.dbm : one logical parameter is below zero
 error_targe_value_over_maximal_level.dbm : one logical parameter is above maximal activation level of the regulated specie
 error_threshold_below_zero.dbm : one threshold of a regulation is lower than 0
@@ -14,3 +23,7 @@ error_threshold_mixed.dbm : one threshold has correct value, but is followed by 
 error_threshold_nonnumerical.dbm : one threshold is given by a symbol
 error_threshold_over_maximal_level.dbm : one threshold is higher than the maximal level of the regulator
 error_threshold_zero.dbm : one threshold is zero, which is forbidden since it does not really make sense from the biological point of view
+
+Test:
+test_label_formula.dbm : tests few formulas for edge labels, only for the syntax
+test_label_noun.dbm : tests syntax for all the possible nouns that can be given for the edge labels

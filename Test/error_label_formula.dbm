@@ -1,0 +1,10 @@
+<MODEL ver="1.0">
+	<STRUCTURE>
+		<SPECIE name="A" >
+			<REGUL source="A" label="*" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>
