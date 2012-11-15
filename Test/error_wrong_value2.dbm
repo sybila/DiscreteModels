@@ -2,7 +2,7 @@
 	<STRUCTURE>
 		<SPECIE name="A" >
 			<REGUL source="B" />
-			<PARAM context="" value="-2" />	
+			<PARAM context="" value="InhibitingOnly2" />	
 		</SPECIE>
 		<SPECIE name="B">
 			<REGUL source="A" />	

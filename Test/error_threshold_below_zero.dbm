@@ -1,7 +1,7 @@
 <MODEL ver="1.0">
 	<STRUCTURE>
 		<SPECIE name="A" >
-			<REGUL source="A" threshold="-1" />	
+			<REGUL source="A" threshold="InhibitingOnly1" />	
 			<PARAM context="A" />
 		</SPECIE>
 	</STRUCTURE>

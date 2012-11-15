@@ -1,20 +1,20 @@
 <MODEL ver="1.1">
 	<STRUCTURE unspec="error">
 		<SPECIE>
-			<REGUL source="1" threshold="1" label="-" />
-			<REGUL source="3" threshold="1" label="-" />
+			<REGUL source="1" threshold="1" label="InhibitingOnly" />
+			<REGUL source="3" threshold="1" label="InhibitingOnly" />
 		</SPECIE>
 		<SPECIE>
-			<REGUL source="0" threshold="1" label="mon+" />
+			<REGUL source="0" threshold="1" label="NotInhibiting" />
 		</SPECIE>
 		<SPECIE>
-			<REGUL source="0" threshold="1" label="+" />
-			<REGUL source="3" threshold="1" label="mon-" />
+			<REGUL source="0" threshold="1" label="ActivatingOnly" />
+			<REGUL source="3" threshold="1" label="NotActivating" />
 		</SPECIE>
 		<SPECIE>
-			<REGUL source="0" threshold="1" label="+" />
-			<REGUL source="2" threshold="1" label="+" />
-			<REGUL source="3" threshold="1" label="-" />
+			<REGUL source="0" threshold="1" label="ActivatingOnly" />
+			<REGUL source="2" threshold="1" label="ActivatingOnly" />
+			<REGUL source="3" threshold="1" label="InhibitingOnly" />
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>

@@ -2,7 +2,7 @@
 	<STRUCTURE>
 		<SPECIE name="A" >
 			<REGUL source="A" />	
-			<PARAM context="A" value="-1" />
+			<PARAM context="A" value="InhibitingOnly1" />
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>

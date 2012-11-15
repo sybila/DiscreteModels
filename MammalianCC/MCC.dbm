@@ -1,56 +1,56 @@
 <MODEL ver="1.0">
 	<STRUCTURE unspec="error">
 		<SPECIE name="Rb" >
-			<REGUL source="CycE" label="-" />
-			<REGUL source="CycA" label="-" />
-			<REGUL source="p27" label="+" />
-			<REGUL source="CycB" label="-" />	
+			<REGUL source="CycE" label="InhibitingOnly" />
+			<REGUL source="CycA" label="InhibitingOnly" />
+			<REGUL source="p27" label="ActivatingOnly" />
+			<REGUL source="CycB" label="InhibitingOnly" />	
 		</SPECIE>	
 		<SPECIE name="E2F" >
-			<REGUL source="Rb" label="-" />	
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />				
-			<REGUL source="CycB" label="-" />		
+			<REGUL source="Rb" label="InhibitingOnly" />	
+			<REGUL source="CycA" label="InhibitingOnly" />	
+			<REGUL source="p27" label="ActivatingOnly" />				
+			<REGUL source="CycB" label="InhibitingOnly" />		
 		</SPECIE>
 		<SPECIE name="CycE" >
-			<REGUL source="Rb" label="mon-" />
-			<REGUL source="E2F" label="+" />							
+			<REGUL source="Rb" label="NotActivating" />
+			<REGUL source="E2F" label="ActivatingOnly" />							
 		</SPECIE>
 		<SPECIE name="CycA" >
-			<REGUL source="Rb" label="-" />
-			<REGUL source="E2F" label="+" />
-			<REGUL source="CycA" label="+" />
-			<REGUL source="Cdc20" label="-" />
-			<REGUL source="Cdh1" label="-" />
-			<REGUL source="UbcH10" label="-" />
+			<REGUL source="Rb" label="InhibitingOnly" />
+			<REGUL source="E2F" label="ActivatingOnly" />
+			<REGUL source="CycA" label="ActivatingOnly" />
+			<REGUL source="Cdc20" label="InhibitingOnly" />
+			<REGUL source="Cdh1" label="InhibitingOnly" />
+			<REGUL source="UbcH10" label="InhibitingOnly" />
 			<LOGIC formula="(((!Rb&amp;!Cdc20)&amp;!(Cdh1&amp;UbcH10))&amp;(E2F|CycA))" />
 		</SPECIE>
 		<SPECIE name="p27" >
-			<REGUL source="CycE" label="-" />	
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />				
-			<REGUL source="CycB" label="-" />				
+			<REGUL source="CycE" label="InhibitingOnly" />	
+			<REGUL source="CycA" label="InhibitingOnly" />	
+			<REGUL source="p27" label="ActivatingOnly" />				
+			<REGUL source="CycB" label="InhibitingOnly" />				
 		</SPECIE>
 		<SPECIE name="Cdc20">
-			<REGUL source="CycB" label="+" />					
+			<REGUL source="CycB" label="ActivatingOnly" />					
 		</SPECIE>
 		<SPECIE name="Cdh1">
-			<REGUL source="CycA" label="-" />	
-			<REGUL source="p27" label="+" />	
-			<REGUL source="Cdc20" label="+" />				
-			<REGUL source="CycB" label="-" />				
+			<REGUL source="CycA" label="InhibitingOnly" />	
+			<REGUL source="p27" label="ActivatingOnly" />	
+			<REGUL source="Cdc20" label="ActivatingOnly" />				
+			<REGUL source="CycB" label="InhibitingOnly" />				
 		</SPECIE>
 		<SPECIE name="UbcH10">
-			<REGUL source="CycA" label="+" />
-			<REGUL source="Cdc20" label="+" />
-			<REGUL source="Cdh1" label="-" />
-			<REGUL source="UbcH10" label="+" />
-			<REGUL source="CycB" label="+" />	
+			<REGUL source="CycA" label="ActivatingOnly" />
+			<REGUL source="Cdc20" label="ActivatingOnly" />
+			<REGUL source="Cdh1" label="InhibitingOnly" />
+			<REGUL source="UbcH10" label="ActivatingOnly" />
+			<REGUL source="CycB" label="ActivatingOnly" />	
 			<LOGIC formula="(!Cdh1|(UbcH10&amp;(Cdc20|(CycA|CycB))))" />
 		</SPECIE>
 		<SPECIE name="CycB">
-			<REGUL source="Cdc20" label="-" />
-			<REGUL source="Cdh1" label="-" />							
+			<REGUL source="Cdc20" label="InhibitingOnly" />
+			<REGUL source="Cdh1" label="InhibitingOnly" />							
 		</SPECIE>
 	</STRUCTURE>
 	<SERIES>
