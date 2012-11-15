@@ -1,4 +1,4 @@
-<MODEL ver="1.0">
+<MODEL ver="1.1">
 	<STRUCTURE unspec="error">
 		<SPECIE name="Rb" >
 			<REGUL source="CycE" label="InhibitingOnly" />

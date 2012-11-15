@@ -1,5 +1,5 @@
 <!InhibitingOnlyInhibitingOnly 2^(16ActivatingOnly16ActivatingOnly4ActivatingOnly64ActivatingOnly16ActivatingOnly2ActivatingOnly16ActivatingOnly32ActivatingOnly4) = 10^50 InhibitingOnlyInhibitingOnly>
-<MODEL ver="1.0">
+<MODEL ver="1.1">
 	<STRUCTURE unspec="error">
 		<SPECIE name="Rb" >
 			<REGUL source="CycE" />

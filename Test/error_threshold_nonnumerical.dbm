@@ -1,4 +1,4 @@
-<MODEL ver="1.0">
+<MODEL ver="1.1">
 	<STRUCTURE>
 		<SPECIE name="A" >
 			<REGUL source="A" threshold="a" />	
