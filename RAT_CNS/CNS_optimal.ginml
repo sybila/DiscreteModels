@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://gin.univ-mrs.fr/GINsim/GINML_2_1.dtd">
+<gxl xmlns:xlink="http://www.w3.org/1999/xlink">
+	<graph id="default_name" class="regulatory" nodeorder="C1 C2 C3 C4">
+<node id="C3" basevalue="0" maxvalue="1">
+  <parameter idActiveInteractions="C1_C3_0" val="1"/>
+  <parameter idActiveInteractions="C4_C3_0" val="0"/>
+  <parameter idActiveInteractions="C1_C3_0 C4_C3_0" val="1"/>
+
+			<nodevisualsetting>
+				<rect x="216" y="211" width="55" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+</node>
+<node id="C2" basevalue="1" maxvalue="1">
+  <parameter idActiveInteractions="C1_C2_0" val="1"/>
+
+			<nodevisualsetting>
+				<rect x="387" y="61" width="55" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+</node>
+<node id="C1" basevalue="1" maxvalue="1">
+  <parameter idActiveInteractions="C2_C1_0" val="1"/>
+  <parameter idActiveInteractions="C4_C1_0" val="1"/>
+  <parameter idActiveInteractions="C2_C1_0 C4_C1_0" val="0"/>
+
+			<nodevisualsetting>
+				<rect x="221" y="63" width="55" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+</node>
+<node id="C4" basevalue="0" maxvalue="1">
+  <parameter idActiveInteractions="C1_C4_0" val="0"/>
+  <parameter idActiveInteractions="C3_C4_0" val="1"/>
+  <parameter idActiveInteractions="C4_C4_0" val="0"/>
+  <parameter idActiveInteractions="C1_C4_0 C3_C4_0" val="1"/>
+  <parameter idActiveInteractions="C1_C4_0 C4_C4_0" val="0"/>
+  <parameter idActiveInteractions="C3_C4_0 C4_C4_0" val="0"/>
+  <parameter idActiveInteractions="C1_C4_0 C3_C4_0 C4_C4_0" val="1"/>
+
+			<nodevisualsetting>
+				<rect x="388" y="211" width="55" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+</node>
+		<edge id="C3_C4_0" from="C3" to="C4" minvalue="1" sign="positive">
+			<edgevisualsetting>
+				<polyline points="243,223 329,238 415,223" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C2_C1_0" from="C2" to="C1" minvalue="1" sign="negative">
+			<edgevisualsetting>
+				<polyline points="414,73 331,59 248,75" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C1_C2_0" from="C1" to="C2" minvalue="1" sign="positive">
+			<edgevisualsetting>
+				<polyline points="248,75 331,89 414,73" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C1_C3_0" from="C1" to="C3" minvalue="1" sign="positive">
+			<edgevisualsetting>
+				<polyline points="248,75 243,223" line_style="curve" line_color="#3399FF" line_width="2" routage="manual"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C1_C4_0" from="C1" to="C4" minvalue="1" sign="positive">
+			<edgevisualsetting>
+				<polyline points="248,75 322,160 415,223" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C4_C1_0" from="C4" to="C1" minvalue="1" sign="negative">
+			<edgevisualsetting>
+				<polyline points="415,223 341,138 248,75" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C4_C3_0" from="C4" to="C3" minvalue="1" sign="negative">
+			<edgevisualsetting>
+				<polyline points="415,223 329,208 243,223" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+		<edge id="C4_C4_0" from="C4" to="C4" minvalue="1" sign="negative">
+			<edgevisualsetting>
+				<polyline points="415,223 405,194 415,190 425,194 415,223" line_style="curve" line_color="#3399FF" line_width="2" routage="auto"/>
+			</edgevisualsetting>
+		</edge>
+	</graph>
+</gxl>

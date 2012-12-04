@@ -9,7 +9,7 @@
 		</SPECIE>
 		<SPECIE>
 			<REGUL source="0" threshold="1" label="ActivatingOnly" />
-			<REGUL source="3" threshold="1" label="InhibitingOnly" />
+			<REGUL source="3" threshold="1" label="NotActivating" />
 		</SPECIE>
 		<SPECIE>
 			<REGUL source="0" threshold="1" label="ActivatingOnly" />
@@ -17,9 +17,11 @@
 			<REGUL source="3" threshold="1" label="InhibitingOnly" />
 		</SPECIE>
 	</STRUCTURE>
-	<SERIES>
-		<EXPR values="(((0=1&amp;1=0)&amp;2=0)&amp;3=0)" />
-		<EXPR values="(((0=1&amp;1=1)&amp;2=1)&amp;3=0)" />	
-		<EXPR values="(((0=0&amp;1=1)&amp;2=1)&amp;3=1)" />			
+	<SERIES>	
+		<EXPR values="(((0=0&amp;1=1)&amp;2=0)&amp;3=1)" />	
+		<EXPR values="(((0=0&amp;1=1)&amp;2=1)&amp;3=1)" />
+		<EXPR values="(((0=1&amp;1=1)&amp;2=1)&amp;3=0)" />
+		<EXPR values="(((0=1&amp;1=1)&amp;2=0)&amp;3=0)" />	
+		<EXPR values="(((0=1&amp;1=0)&amp;2=0)&amp;3=0)" />		
 	</SERIES>
 </MODEL>

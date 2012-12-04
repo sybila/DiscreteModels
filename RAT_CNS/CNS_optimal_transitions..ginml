@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://gin.univ-mrs.fr/GINsim/GINML_2_1.dtd">
+<gxl xmlns:xlink="http://www.w3.org/1999/xlink">
+	<graph id="default_name" class="dynamical" nodeorder="C1 C2 C3 C4">
+		<node id="s1000">
+			<nodevisualsetting>
+				<rect x="19" y="172" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s0100">
+			<nodevisualsetting>
+				<rect x="657" y="292" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s1100">
+			<nodevisualsetting>
+				<rect x="133" y="175" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s1010">
+			<nodevisualsetting>
+				<rect x="140" y="274" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s0110">
+			<nodevisualsetting>
+				<rect x="538" y="282" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s1110">
+			<nodevisualsetting>
+				<rect x="229" y="172" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s0101">
+			<nodevisualsetting>
+				<rect x="531" y="178" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s1011">
+			<nodevisualsetting>
+				<rect x="229" y="277" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s0111">
+			<nodevisualsetting>
+				<rect x="427" y="176" width="50" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<node id="s1111">
+			<nodevisualsetting>
+				<rect x="332" y="177" width="45" height="25" backgroundColor="#FF9900" foregroundColor="#FFFFFF"/>
+			</nodevisualsetting>
+		</node>
+		<edge id="s1000_s1100" from="s1000" to="s1100">
+			<edgevisualsetting>
+				<polyline points="41,184 155,187" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1000_s1010" from="s1000" to="s1010">
+			<edgevisualsetting>
+				<polyline points="41,184 162,286" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0100_s1100" from="s0100" to="s1100">
+			<edgevisualsetting>
+				<polyline points="679,304 155,187" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1100_s1110" from="s1100" to="s1110">
+			<edgevisualsetting>
+				<polyline points="155,187 251,184" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1010_s1110" from="s1010" to="s1110">
+			<edgevisualsetting>
+				<polyline points="162,286 251,184" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1010_s1011" from="s1010" to="s1011">
+			<edgevisualsetting>
+				<polyline points="162,286 251,289" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0110_s1110" from="s0110" to="s1110">
+			<edgevisualsetting>
+				<polyline points="560,294 251,184" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0110_s0100" from="s0110" to="s0100">
+			<edgevisualsetting>
+				<polyline points="560,294 679,304" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0110_s0111" from="s0110" to="s0111">
+			<edgevisualsetting>
+				<polyline points="560,294 452,188" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1110_s1111" from="s1110" to="s1111">
+			<edgevisualsetting>
+				<polyline points="251,184 354,189" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0101_s0100" from="s0101" to="s0100">
+			<edgevisualsetting>
+				<polyline points="553,190 679,304" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1011_s1111" from="s1011" to="s1111">
+			<edgevisualsetting>
+				<polyline points="251,289 354,189" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0111_s0101" from="s0111" to="s0101">
+			<edgevisualsetting>
+				<polyline points="452,188 553,190" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s0111_s0110" from="s0111" to="s0110">
+			<edgevisualsetting>
+				<polyline points="452,188 560,294" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge>		<edge id="s1111_s0111" from="s1111" to="s0111">
+			<edgevisualsetting>
+				<polyline points="354,189 452,188" line_style="straight" line_color="#3399FF" line_width="1" routage="manual"/>
+			</edgevisualsetting>
+</edge><annotation>
+  <comment>STG construction parameters:
+    Updating policy: asynchronous (BF)
+    Initial states: 
+        M1  0  0  0
+
+
+</comment>
+</annotation>
+<link xlink:href="/home/punyone/Coloring/RAT CNS/CNS_optimal.ginml"/>
+	</graph>
+</gxl>

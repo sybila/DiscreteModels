@@ -1,0 +1,58 @@
+Reading "CNS.out"
+Parametrizatins in total: 108
+Min cost: 6 Max cost: 6
+Parametrizations with min cost: 108
+Max rob: 0.25 Min rob: 0.00925925925926
+Parametrizations with max rob: 2
+
+Max robustness of min cost: 0.25
+Parametrizations with max rob of min cost: 2
+Min cost of max rob: 6
+Parametrizations with min cost of max rob: 2
+
+Comparing the sets "MaxR_of_MinC" and "MinC_of_MaxR":
+MaxR_of_MinC = MinC_of_MaxR
+
+Optimal parametrizations: 2
+Optimal cost/rob: 6 / 0.25
+
+Parameter ranges:
+C1_()         : [1]
+C1_(C2)       : [1]
+C1_(C4)       : [1]
+C1_(C2,C4)    : [0]
+C2_()         : [1]
+C2_(C1)       : [1]
+C3_()         : [0, 1]
+C3_(C1)       : [1]
+C3_(C4)       : [0]
+C3_(C1,C4)    : [1]
+C4_()         : [0]
+C4_(C1)       : [0]
+C4_(C3)       : [1]
+C4_(C4)       : [0]
+C4_(C1,C3)    : [1]
+C4_(C1,C4)    : [0]
+C4_(C3,C4)    : [0]
+C4_(C1,C3,C4) : [1]
+All parameter combinations are optimal
+
+Optimal parametrizations:
+C1_()         : 1 1
+C1_(C2)       : 1 1
+C1_(C4)       : 1 1
+C1_(C2,C4)    : 0 0
+C2_()         : 1 1
+C2_(C1)       : 1 1
+C3_()         : 0 1
+C3_(C1)       : 1 1
+C3_(C4)       : 0 0
+C3_(C1,C4)    : 1 1
+C4_()         : 0 0
+C4_(C1)       : 0 0
+C4_(C3)       : 1 1
+C4_(C4)       : 0 0
+C4_(C1,C3)    : 1 1
+C4_(C1,C4)    : 0 0
+C4_(C3,C4)    : 0 0
+C4_(C1,C3,C4) : 1 1
