@@ -1,0 +1,34 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE name="lexA" >
+			<REGUL source="lexA" />
+			<REGUL source="uvrD" />
+			<REGUL source="umuD" />
+			<REGUL source="recA" />
+		</SPECIE>
+		<SPECIE name="umuD" >
+			<REGUL source="lexA" />
+			<REGUL source="recA" />
+		</SPECIE>
+		<SPECIE name="uvrD" >
+			<REGUL source="lexA" />
+			<REGUL source="uvrD" />
+			<REGUL source="uvrA"  />
+		</SPECIE>
+		<SPECIE name="polB" >
+			<REGUL source="lexA" />
+			<REGUL source="polB" />
+			<REGUL source="uvrA" />
+		</SPECIE>
+		<SPECIE name="recA">
+			<REGUL source="lexA" />
+			<REGUL source="umuD" />
+			<REGUL source="polB" />
+			<REGUL source="recA" />
+		</SPECIE>
+		<SPECIE name="uvrA">
+			<REGUL source="lexA" />
+			<REGUL source="uvrA" />
+		</SPECIE>
+	</STRUCTURE>
+</MODEL>

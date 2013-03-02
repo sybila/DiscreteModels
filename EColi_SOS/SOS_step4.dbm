@@ -1,0 +1,42 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE name="lexA" max="2" >
+			<REGUL source="lexA" label="InhibitingOnly" threshold="2" />
+			<REGUL source="uvrD" label="ActivatingOnly" />
+			<REGUL source="umuD" label="ActivatingOnly" />
+			<REGUL source="recA" label="InhibitingOnly" />
+			<PARAM context="lexA:2,recA" value="0" />
+			<PARAM context="uvrD,umuD" value="2" />
+			<PARAM context="umuD" value="2" />
+			<PARAM context="uvrD" value="2" />
+			<PARAM context="" value="2" />
+		</SPECIE>
+		<SPECIE name="umuD" >
+			<REGUL source="lexA" label="InhibitingOnly" threshold="1" />
+			<REGUL source="recA" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="uvrD" >
+			<REGUL source="lexA" label="InhibitingOnly" threshold="2" />
+			<REGUL source="uvrD" label="InhibitingOnly" />
+			<REGUL source="uvrA" label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="polB" >
+			<REGUL source="lexA" label="InhibitingOnly" threshold="2" />
+			<REGUL source="polB" label="InhibitingOnly" />
+			<REGUL source="uvrA" label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="recA">
+			<REGUL source="lexA" label="InhibitingOnly" threshold="1" />
+			<REGUL source="umuD" label="ActivatingOnly" />
+			<REGUL source="polB" label="ActivatingOnly" />
+			<REGUL source="recA" label="InhibitingOnly" />
+			<PARAM context="" value="0" />
+			<PARAM context="lexA,recA" value="0" />	
+			<PARAM context="umuD,polB" value="1" />	
+		</SPECIE>
+		<SPECIE name="uvrA">
+			<REGUL source="lexA" label="InhibitingOnly" threshold="2" />
+			<REGUL source="uvrA" label="InhibitingOnly" />
+		</SPECIE>
+	</STRUCTURE>
+</MODEL>

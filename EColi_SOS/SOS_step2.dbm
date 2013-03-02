@@ -1,0 +1,34 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE name="lexA" >
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="uvrD" label="ActivatingOnly" />
+			<REGUL source="umuD" label="ActivatingOnly" />
+			<REGUL source="recA" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="umuD" >
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="recA" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="uvrD" >
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="uvrD" label="InhibitingOnly" />
+			<REGUL source="uvrA" label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="polB" >
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="polB" label="InhibitingOnly" />
+			<REGUL source="uvrA" label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="recA">
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="umuD" label="ActivatingOnly" />
+			<REGUL source="polB" label="ActivatingOnly" />
+			<REGUL source="recA" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="uvrA">
+			<REGUL source="lexA" label="InhibitingOnly" />
+			<REGUL source="uvrA" label="InhibitingOnly" />
+		</SPECIE>
+	</STRUCTURE>
+</MODEL>
