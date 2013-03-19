@@ -1,0 +1,22 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE>
+			<REGUL source="C" threshold="1" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="A" threshold="1" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="B" threshold="1" label="InhibitingOnly" />
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="((A=1&B=0)&C=0)" />
+		<EXPR values="((A=1&B=1)&C=0)" />
+		<EXPR values="((A=0&B=1)&C=0)" />
+		<EXPR values="((A=0&B=1)&C=1)" />
+		<EXPR values="((A=0&B=0)&C=1)" />	
+		<EXPR values="((A=1&B=0)&C=1)" />
+		<EXPR values="((A=1&B=0)&C=0)" />		
+	</SERIES>
+</MODEL>

@@ -23,7 +23,6 @@
 			<REGUL source="Cdc20" label="InhibitingOnly" />
 			<REGUL source="Cdh1" label="InhibitingOnly" />
 			<REGUL source="UbcH10" label="InhibitingOnly" />
-			<LOGIC formula="(((!Rb&amp;!Cdc20)&amp;!(Cdh1&amp;UbcH10))&amp;(E2F|CycA))" />
 		</SPECIE>
 		<SPECIE name="p27" >
 			<REGUL source="CycE" label="InhibitingOnly" />	
@@ -46,7 +45,6 @@
 			<REGUL source="Cdh1" label="InhibitingOnly" />
 			<REGUL source="UbcH10" label="ActivatingOnly" />
 			<REGUL source="CycB" label="ActivatingOnly" />	
-			<LOGIC formula="(!Cdh1|(UbcH10&amp;(Cdc20|(CycA|CycB))))" />
 		</SPECIE>
 		<SPECIE name="CycB">
 			<REGUL source="Cdc20" label="InhibitingOnly" />

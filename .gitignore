@@ -1,5 +1,6 @@
 *.out
 *.sqlite
+*.pbm
 *~
 *.py
 *#*
