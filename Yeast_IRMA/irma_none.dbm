@@ -1,0 +1,25 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE name="CBF1">
+			<REGUL source="SWI5" label="ActivatingOnly" />
+			<REGUL source="ASH1" label="InhibitingOnly" />			
+		</SPECIE>
+		<SPECIE name="GAL4">			
+			<REGUL source="CBF1" label="ActivatingOnly" />	
+			<REGUL source="GAL80" label="NotActivating" />				
+		</SPECIE>
+		<SPECIE name="SWI5">			
+			<REGUL source="GAL4" label="ActivatingOnly" />		
+		</SPECIE>
+		<SPECIE name="ASH1">			
+			<REGUL source="SWI5" label="ActivatingOnly" />			
+		</SPECIE>
+		<SPECIE name="GAL80">			
+			<REGUL source="SWI5" label="ActivatingOnly" />
+			<REGUL source="GAL4" label="NotActivating" />					
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>

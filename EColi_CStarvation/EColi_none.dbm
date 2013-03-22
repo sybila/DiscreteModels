@@ -1,0 +1,43 @@
+<MODEL ver="1.1">
+	<STRUCTURE unspec="error">
+		<SPECIE name="GyrAB">
+			<REGUL source="Coiling" label="InhibitingOnly" />
+			<REGUL source="Fis"  label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="Coiling">
+			<REGUL source="GyrAB" label="ActivatingOnly" />
+			<REGUL source="TopA"  label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="TopA">
+			<REGUL source="Coiling" label="ActivatingOnly" />
+			<REGUL source="Fis"  label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="SRNA">
+			<REGUL source="Fis"  label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="Fis">
+			<REGUL source="Coiling" label="ActivatingOnly" />
+			<REGUL source="Fis"  label="InhibitingOnly" />
+			<REGUL source="cAMP"  label="InhibitingOnly" />			
+		</SPECIE>
+		<SPECIE name="CRP">
+			<REGUL source="cAMP" label="InhibitingOnly" />
+			<REGUL source="Fis"  label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="cAMP">
+			<REGUL source="Cya" label="ActivatingOnly" />
+			<REGUL source="CRP"  label="ActivatingOnly" />
+			<REGUL source="Signal" label="ActivatingOnly" />
+		</SPECIE>
+		<SPECIE name="Cya">
+			<REGUL source="cAMP" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE name="Signal">
+			<REGUL source="Signal" />
+			<LOGIC formula="Signal" />
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />	
+	</SERIES>
+</MODEL>

@@ -1,0 +1,19 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE>
+			<REGUL source="A" label="NotActivating" />		
+			<REGUL source="B" label="ActivatingOnly" />	
+			<REGUL source="C" label="ActivatingOnly" />					
+		</SPECIE>
+		<SPECIE>			
+			<REGUL source="C" label="Observable" />		
+		</SPECIE>
+		<SPECIE>			
+			<REGUL source="C" label="ActivatingOnly" />	
+			<REGUL source="B" label="ActivatingOnly" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>

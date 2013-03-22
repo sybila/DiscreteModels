@@ -1,0 +1,15 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE max="2">
+			<REGUL source="A" label="InhibitingOnly" />		
+			<REGUL source="A" threshold="2" label="NotActivating" />	
+			<REGUL source="B" label="NotInhibiting" />						
+		</SPECIE>
+		<SPECIE max="1">		
+			<REGUL source="A" label="Observable" />			
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="tt" />
+	</SERIES>
+</MODEL>
