@@ -1,0 +1,30 @@
+<MODEL ver="1.1">
+	<STRUCTURE>
+		<SPECIE>
+			<REGUL source="D" label="NotActivating" />		
+			<REGUL source="B" label="Free" />					
+		</SPECIE>
+		<SPECIE>			
+			<REGUL source="A" label="Free" />		
+			<REGUL source="C" label="Free" />	
+		</SPECIE>
+		<SPECIE>			
+			<REGUL source="D" label="NotInhibiting" />		
+			<REGUL source="B" label="Free" />	
+		</SPECIE>
+		<SPECIE>			
+			<REGUL source="A" label="Free" />		
+			<REGUL source="C" label="Free" />	
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="((((A=0&B=1)&C=0)&D=1)|(((A=1&B=0)&C=1)&D=0))" />
+		<EXPR values="((((A=1&B=1)&C=0)&D=0)|(((A=0&B=0)&C=1)&D=1))" />
+		<EXPR values="((((A=0&B=0)&C=1)&D=0)|(((A=1&B=0)&C=0)&D=1))" />
+		<EXPR values="(((A=0&B=0)&C=1)&D=0)" />
+		<EXPR values="((B=1&C=1)|(A=0&B=1))" />
+		<EXPR values="(((A=1&B=1)&C=0)|((A=0&C=1)&D=1))" />
+		<EXPR values="((((A=1&B=0)&C=0)&D=0)|(((A=1&B=0)&C=1)&D=1))" />
+		<EXPR values="((A=0&B=0)&C=1)" />
+	</SERIES>
+</MODEL>

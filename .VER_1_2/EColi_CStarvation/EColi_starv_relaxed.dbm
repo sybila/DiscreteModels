@@ -1,0 +1,47 @@
+<MODEL ver="1.1">
+	<STRUCTURE unspec="error">
+		<SPECIE name="GyrAB">
+			<REGUL source="Coiling" label="NotActivating" />
+			<REGUL source="Fis"  label="NotActivating" />
+		</SPECIE>
+		<SPECIE name="Coiling">
+			<REGUL source="GyrAB" label="NotInhibiting" />
+			<REGUL source="TopA"  label="NotActivating" />
+		</SPECIE>
+		<SPECIE name="TopA">
+			<REGUL source="Coiling" label="NotInhibiting" />
+			<REGUL source="Fis"  label="NotInhibiting" />
+		</SPECIE>
+		<SPECIE name="SRNA">
+			<REGUL source="Fis"  label="NotInhibiting" />
+		</SPECIE>
+		<SPECIE name="Fis">
+			<REGUL source="Coiling" label="NotInhibiting" />
+			<REGUL source="Fis"  label="NotActivating" />
+			<REGUL source="cAMP"  label="NotActivating" />
+		</SPECIE>
+		<SPECIE name="CRP">
+			<REGUL source="cAMP" label="NotActivating" />
+			<REGUL source="Fis"  label="NotInhibiting" />
+		</SPECIE>
+		<SPECIE name="cAMP">
+			<REGUL source="Cya" label="NotInhibiting" />
+			<REGUL source="CRP"  label="NotInhibiting" />
+			<REGUL source="Signal" label="NotInhibiting" />
+		</SPECIE>
+		<SPECIE name="Cya">
+			<REGUL source="cAMP" label="NotActivating" />
+		</SPECIE>
+		<SPECIE name="Signal">
+			<REGUL source="Signal" />
+			<LOGIC formula="Signal" />
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(Signal=1&(CRP=0&(Cya=1&(GyrAB=1&(TopA=0&(Fis=1&SRNA=1))))))" />
+		<EXPR values="(Signal=1&(CRP=0&(Cya=1&(GyrAB=0&(TopA=1&(Fis=0&SRNA=1))))))" />	
+		<EXPR values="(Signal=1&(CRP=1&(Cya=1&(GyrAB=1&(TopA=0&(Fis=0&SRNA=0))))))" />		
+		<EXPR values="(Signal=1&(CRP=0&(Cya=0&(GyrAB=0&(TopA=0&(Fis=0&SRNA=0))))))" />	
+		<EXPR values="(Signal=1&(CRP=1&(Cya=1&(GyrAB=1&(TopA=0&(Fis=0&SRNA=0))))))" />			
+	</SERIES>
+</MODEL>

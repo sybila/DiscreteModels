@@ -1,0 +1,14 @@
+<MODEL ver="1.2">
+	<STRUCTURE>
+		<SPECIE >	
+			<REGUL source="B" ></REGUL>
+		</SPECIE>
+		<SPECIE >
+			<REGUL source="A" ></REGUL>
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="A=1" ></EXPR>
+		<EXPR values="B=1" ></EXPR>
+	</SERIES>
+</MODEL>

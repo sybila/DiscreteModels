@@ -1,0 +1,27 @@
+<MODEL ver="1.1">
+	<STRUCTURE unspec="error">
+		<SPECIE>
+			<REGUL source="B" threshold="1" label="InhibitingOnly" />
+			<REGUL source="D" threshold="1" label="InhibitingOnly" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="A" threshold="1" label="NotInhibiting" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="A" threshold="1" label="ActivatingOnly" />
+			<REGUL source="D" threshold="1" label="NotActivating" />
+		</SPECIE>
+		<SPECIE>
+			<REGUL source="A" threshold="1" label="ActivatingOnly" />
+			<REGUL source="C" threshold="1" label="ActivatingOnly" />
+			<REGUL source="D" threshold="1" label="InhibitingOnly" />
+		</SPECIE>
+	</STRUCTURE>
+	<SERIES>
+		<EXPR values="(((A=0&amp;B=1)&amp;C=0)&amp;D=1)" />		
+		<EXPR values="(((A=0&amp;B=1)&amp;C=1)&amp;D=1)" />	
+		<EXPR values="(((A=1&amp;B=1)&amp;C=1)&amp;D=0)" />	
+		<EXPR values="(((A=1&amp;B=1)&amp;C=0)&amp;D=0)" />
+		<EXPR values="(((A=1&amp;B=0)&amp;C=0)&amp;D=0)" />	
+	</SERIES>
+</MODEL>

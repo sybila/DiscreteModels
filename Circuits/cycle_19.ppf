@@ -1,0 +1,5 @@
+<SERIES>
+	<EXPR values="(A=0&amp;(B=0&amp;(C=0&amp;(D=0&amp;(E=0&amp;(F=0&amp;(G=0&amp;(H=0&amp;(I=0&amp;(J=0&amp;(K=0&amp;(L=0&amp;(M=0&amp;(N=0&amp;(O=0&amp;(P=0&amp;(Q=0&amp;(R=0&amp;S=0))))))))))))))))))" />
+	<EXPR values="(A=1&amp;(B=1&amp;(C=1&amp;(D=1&amp;(E=1&amp;(F=1&amp;(G=1&amp;(H=1&amp;(I=1&amp;(J=1&amp;(K=1&amp;(L=1&amp;(M=1&amp;(N=1&amp;(O=1&amp;(P=1&amp;(Q=1&amp;(R=1&amp;S=1))))))))))))))))))" />
+	<EXPR values="(A=0&amp;(B=0&amp;(C=0&amp;(D=0&amp;(E=0&amp;(F=0&amp;(G=0&amp;(H=0&amp;(I=0&amp;(J=0&amp;(K=0&amp;(L=0&amp;(M=0&amp;(N=0&amp;(O=0&amp;(P=0&amp;(Q=0&amp;(R=0&amp;S=0))))))))))))))))))" />
+</SERIES>

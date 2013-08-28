@@ -1,0 +1,60 @@
+<NETWORK>
+	<COMPONENT>
+		<REGUL source="S" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="A" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="B" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="C" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="D" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="E" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="F" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="G" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="H" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="I" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="J" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="K" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="L" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="M" label="-" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="N" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="O" label="+" />
+	</COMPONENT>
+	<COMPONENT >
+		<REGUL source="P" label="-" />
+	</COMPONENT>
+		<COMPONENT >
+		<REGUL source="Q" label="+" />
+	</COMPONENT>
+		<COMPONENT >
+		<REGUL source="R" label="-" />
+	</COMPONENT>
+</NETWORK>
+
