@@ -1,0 +1,20 @@
+<NETWORK>
+	<SPECIE name="cI" max="2" >
+		<REGUL source="cI" threshold ="2" label="NotInhibiting" />
+		<REGUL source="cII" threshold ="1" label="ActivatingOnly" />
+		<REGUL source="cro" threshold ="1" label="InhibitingOnly" />		
+	</SPECIE>
+	<SPECIE name="cII" max="1" >
+		<REGUL source="cI" threshold ="2" label="InhibitingOnly" />
+		<REGUL source="cro" threshold ="3" label="InhibitingOnly" />
+		<REGUL source="Nc" threshold ="1" label="ActivatingOnly" />			
+	</SPECIE>
+	<SPECIE name="cro" max="3" >
+		<REGUL source="cI" threshold ="2" label="InhibitingOnly" />
+		<REGUL source="cro" threshold ="3" label="InhibitingOnly" />		
+	</SPECIE>
+	<SPECIE name="Nc" max="1" >
+		<REGUL source="cI" threshold ="1" label="InhibitingOnly" />
+		<REGUL source="cro" threshold ="2" label="InhibitingOnly" />		
+	</SPECIE>
+</NETWORK>
